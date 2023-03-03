@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: CryptoOptions
+uid: '@azure/msal-browser.CryptoOptions'
+package: '@azure/msal-browser'
+summary: ''
+fullName: CryptoOptions
+remarks: ''
+isDeprecated: false
+syntax: |
+  type CryptoOptions = {
+    entropy?: Uint8Array,
+    useMsrCrypto?: undefined | false | true,
+  }

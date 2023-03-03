@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: NativeResponseProperties
+uid: '@azure/msal-browser.NativeResponseProperties'
+package: '@azure/msal-browser'
+summary: Properties returned under "properties" of the NativeResponse
+fullName: NativeResponseProperties
+remarks: ''
+isDeprecated: false
+syntax: |
+  type NativeResponseProperties = { MATS?: undefined | string }

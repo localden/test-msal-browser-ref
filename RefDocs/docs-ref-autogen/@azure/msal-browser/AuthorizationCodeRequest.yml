@@ -1,0 +1,21 @@
+### YamlMime:TSTypeAlias
+name: AuthorizationCodeRequest
+uid: '@azure/msal-browser.AuthorizationCodeRequest'
+package: '@azure/msal-browser'
+summary: ''
+fullName: AuthorizationCodeRequest
+remarks: ''
+isDeprecated: false
+syntax: |
+  type AuthorizationCodeRequest = Partial<
+    Omit<
+      CommonAuthorizationCodeRequest,
+      "code" | "enableSpaAuthorizationCode" | "requestedClaimsHash"
+    >
+  > & {
+    cloudGraphHostName?: undefined | string,
+    cloudInstanceHostName?: undefined | string,
+    code?: undefined | string,
+    msGraphHost?: undefined | string,
+    nativeAccountId?: undefined | string,
+  }

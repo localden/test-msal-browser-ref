@@ -1,1 +1,322 @@
-- name: Sample
+- name: '@azure/msal-browser'
+  items:
+    - name: Overview
+      uid: '@azure/msal-browser'
+    - uid: '@azure/msal-browser.ApiId'
+      name: ApiId
+      items: []
+    - uid: '@azure/msal-browser.AsyncMemoryStorage'
+      name: AsyncMemoryStorage
+      items: []
+    - uid: '@azure/msal-browser.AuthorizationCodeRequest'
+      name: AuthorizationCodeRequest
+      items: []
+    - uid: '@azure/msal-browser.AuthorizationUrlRequest'
+      name: AuthorizationUrlRequest
+      items: []
+    - uid: '@azure/msal-browser.Base64Decode'
+      name: Base64Decode
+      items: []
+    - uid: '@azure/msal-browser.Base64Encode'
+      name: Base64Encode
+      items: []
+    - uid: '@azure/msal-browser.BaseInteractionClient'
+      name: BaseInteractionClient
+      items: []
+    - uid: '@azure/msal-browser.BrowserAuthError'
+      name: BrowserAuthError
+      items: []
+    - uid: '@azure/msal-browser.BrowserAuthOptions'
+      name: BrowserAuthOptions
+      items: []
+    - uid: '@azure/msal-browser.BrowserCacheLocation'
+      name: BrowserCacheLocation
+      items: []
+    - uid: '@azure/msal-browser.BrowserCacheManager'
+      name: BrowserCacheManager
+      items: []
+    - uid: '@azure/msal-browser.BrowserConfiguration'
+      name: BrowserConfiguration
+      items: []
+    - uid: '@azure/msal-browser.BrowserConfigurationAuthError'
+      name: BrowserConfigurationAuthError
+      items: []
+    - uid: '@azure/msal-browser.BrowserCrypto'
+      name: BrowserCrypto
+      items: []
+    - uid: '@azure/msal-browser.BrowserPerformanceClient'
+      name: BrowserPerformanceClient
+      items: []
+    - uid: '@azure/msal-browser.BrowserPerformanceMeasurement'
+      name: BrowserPerformanceMeasurement
+      items: []
+    - uid: '@azure/msal-browser.BrowserProtocolUtils'
+      name: BrowserProtocolUtils
+      items: []
+    - uid: '@azure/msal-browser.BrowserStateObject'
+      name: BrowserStateObject
+      items: []
+    - uid: '@azure/msal-browser.BrowserStorage'
+      name: BrowserStorage
+      items: []
+    - uid: '@azure/msal-browser.BrowserStringUtils'
+      name: BrowserStringUtils
+      items: []
+    - uid: '@azure/msal-browser.BrowserSystemOptions'
+      name: BrowserSystemOptions
+      items: []
+    - uid: '@azure/msal-browser.BrowserTelemetryOptions'
+      name: BrowserTelemetryOptions
+      items: []
+    - uid: '@azure/msal-browser.BrowserUtils'
+      name: BrowserUtils
+      items: []
+    - uid: '@azure/msal-browser.CachedKeyPair'
+      name: CachedKeyPair
+      items: []
+    - uid: '@azure/msal-browser.CacheLookupPolicy'
+      name: CacheLookupPolicy
+      items: []
+    - uid: '@azure/msal-browser.CacheOptions'
+      name: CacheOptions
+      items: []
+    - uid: '@azure/msal-browser.ClientApplication'
+      name: ClientApplication
+      items: []
+    - uid: '@azure/msal-browser.Configuration'
+      name: Configuration
+      items: []
+    - uid: '@azure/msal-browser.CryptoKeyStore'
+      name: CryptoKeyStore
+      items: []
+    - uid: '@azure/msal-browser.CryptoKeyStoreNames'
+      name: CryptoKeyStoreNames
+      items: []
+    - uid: '@azure/msal-browser.CryptoOps'
+      name: CryptoOps
+      items: []
+    - uid: '@azure/msal-browser.CryptoOptions'
+      name: CryptoOptions
+      items: []
+    - uid: '@azure/msal-browser.DatabaseStorage'
+      name: DatabaseStorage
+      items: []
+    - uid: '@azure/msal-browser.EndSessionPopupRequest'
+      name: EndSessionPopupRequest
+      items: []
+    - uid: '@azure/msal-browser.EndSessionRequest'
+      name: EndSessionRequest
+      items: []
+    - uid: '@azure/msal-browser.EventCallbackFunction'
+      name: EventCallbackFunction
+      items: []
+    - uid: '@azure/msal-browser.EventError'
+      name: EventError
+      items: []
+    - uid: '@azure/msal-browser.EventHandler'
+      name: EventHandler
+      items: []
+    - uid: '@azure/msal-browser.EventMessage'
+      name: EventMessage
+      items: []
+    - uid: '@azure/msal-browser.EventMessageUtils'
+      name: EventMessageUtils
+      items: []
+    - uid: '@azure/msal-browser.EventPayload'
+      name: EventPayload
+      items: []
+    - uid: '@azure/msal-browser.EventType'
+      name: EventType
+      items: []
+    - uid: '@azure/msal-browser.FetchClient'
+      name: FetchClient
+      items: []
+    - uid: '@azure/msal-browser.GuidGenerator'
+      name: GuidGenerator
+      items: []
+    - uid: '@azure/msal-browser.HTTP_REQUEST_TYPE'
+      name: HTTP_REQUEST_TYPE
+      items: []
+    - uid: '@azure/msal-browser.HybridSpaAuthorizationCodeClient'
+      name: HybridSpaAuthorizationCodeClient
+      items: []
+    - uid: '@azure/msal-browser.IAsyncStorage'
+      name: IAsyncStorage
+      items: []
+    - uid: '@azure/msal-browser.INavigationClient'
+      name: INavigationClient
+      items: []
+    - uid: '@azure/msal-browser.InMemoryCacheKeys'
+      name: InMemoryCacheKeys
+      items: []
+    - uid: '@azure/msal-browser.InteractionHandler'
+      name: InteractionHandler
+      items: []
+    - uid: '@azure/msal-browser.InteractionParams'
+      name: InteractionParams
+      items: []
+    - uid: '@azure/msal-browser.InteractionStatus'
+      name: InteractionStatus
+      items: []
+    - uid: '@azure/msal-browser.InteractionType'
+      name: InteractionType
+      items: []
+    - uid: '@azure/msal-browser.IPublicClientApplication'
+      name: IPublicClientApplication
+      items: []
+    - uid: '@azure/msal-browser.ISubtleCrypto'
+      name: ISubtleCrypto
+      items: []
+    - uid: '@azure/msal-browser.ITokenCache'
+      name: ITokenCache
+      items: []
+    - uid: '@azure/msal-browser.IWindowStorage'
+      name: IWindowStorage
+      items: []
+    - uid: '@azure/msal-browser.LoadTokenOptions'
+      name: LoadTokenOptions
+      items: []
+    - uid: '@azure/msal-browser.MathUtils'
+      name: MathUtils
+      items: []
+    - uid: '@azure/msal-browser.MATS'
+      name: MATS
+      items: []
+    - uid: '@azure/msal-browser.MemoryStorage'
+      name: MemoryStorage
+      items: []
+    - uid: '@azure/msal-browser.ModernBrowserCrypto'
+      name: ModernBrowserCrypto
+      items: []
+    - uid: '@azure/msal-browser.MsBrowserCrypto'
+      name: MsBrowserCrypto
+      items: []
+    - uid: '@azure/msal-browser.MsrBrowserCrypto'
+      name: MsrBrowserCrypto
+      items: []
+    - uid: '@azure/msal-browser.NativeAccountInfo'
+      name: NativeAccountInfo
+      items: []
+    - uid: '@azure/msal-browser.NativeAuthError'
+      name: NativeAuthError
+      items: []
+    - uid: '@azure/msal-browser.NativeExtensionMethod'
+      name: NativeExtensionMethod
+      items: []
+    - uid: '@azure/msal-browser.NativeExtensionRequest'
+      name: NativeExtensionRequest
+      items: []
+    - uid: '@azure/msal-browser.NativeExtensionRequestBody'
+      name: NativeExtensionRequestBody
+      items: []
+    - uid: '@azure/msal-browser.NativeInteractionClient'
+      name: NativeInteractionClient
+      items: []
+    - uid: '@azure/msal-browser.NativeMessageHandler'
+      name: NativeMessageHandler
+      items: []
+    - uid: '@azure/msal-browser.NativeResponse'
+      name: NativeResponse
+      items: []
+    - uid: '@azure/msal-browser.NativeResponseProperties'
+      name: NativeResponseProperties
+      items: []
+    - uid: '@azure/msal-browser.NativeStatusCode'
+      name: NativeStatusCode
+      items: []
+    - uid: '@azure/msal-browser.NativeTokenRequest'
+      name: NativeTokenRequest
+      items: []
+    - uid: '@azure/msal-browser.NavigationClient'
+      name: NavigationClient
+      items: []
+    - uid: '@azure/msal-browser.NavigationOptions'
+      name: NavigationOptions
+      items: []
+    - uid: '@azure/msal-browser.OSError'
+      name: OSError
+      items: []
+    - uid: '@azure/msal-browser.PkceGenerator'
+      name: PkceGenerator
+      items: []
+    - uid: '@azure/msal-browser.PopupClient'
+      name: PopupClient
+      items: []
+    - uid: '@azure/msal-browser.PopupEvent'
+      name: PopupEvent
+      items: []
+    - uid: '@azure/msal-browser.PopupParams'
+      name: PopupParams
+      items: []
+    - uid: '@azure/msal-browser.PopupPosition'
+      name: PopupPosition
+      items: []
+    - uid: '@azure/msal-browser.PopupRequest'
+      name: PopupRequest
+      items: []
+    - uid: '@azure/msal-browser.PopupSize'
+      name: PopupSize
+      items: []
+    - uid: '@azure/msal-browser.PopupWindowAttributes'
+      name: PopupWindowAttributes
+      items: []
+    - uid: '@azure/msal-browser.PublicClientApplication'
+      name: PublicClientApplication
+      items: []
+    - uid: '@azure/msal-browser.RedirectClient'
+      name: RedirectClient
+      items: []
+    - uid: '@azure/msal-browser.RedirectHandler'
+      name: RedirectHandler
+      items: []
+    - uid: '@azure/msal-browser.RedirectParams'
+      name: RedirectParams
+      items: []
+    - uid: '@azure/msal-browser.RedirectRequest'
+      name: RedirectRequest
+      items: []
+    - uid: '@azure/msal-browser.SignedHttpRequest'
+      name: SignedHttpRequest
+      items: []
+    - uid: '@azure/msal-browser.SignedHttpRequestOptions'
+      name: SignedHttpRequestOptions
+      items: []
+    - uid: '@azure/msal-browser.SilentAuthCodeClient'
+      name: SilentAuthCodeClient
+      items: []
+    - uid: '@azure/msal-browser.SilentCacheClient'
+      name: SilentCacheClient
+      items: []
+    - uid: '@azure/msal-browser.SilentHandler'
+      name: SilentHandler
+      items: []
+    - uid: '@azure/msal-browser.SilentIframeClient'
+      name: SilentIframeClient
+      items: []
+    - uid: '@azure/msal-browser.SilentRefreshClient'
+      name: SilentRefreshClient
+      items: []
+    - uid: '@azure/msal-browser.SilentRequest'
+      name: SilentRequest
+      items: []
+    - uid: '@azure/msal-browser.SsoSilentRequest'
+      name: SsoSilentRequest
+      items: []
+    - uid: '@azure/msal-browser.StandardInteractionClient'
+      name: StandardInteractionClient
+      items: []
+    - uid: '@azure/msal-browser.TemporaryCacheKeys'
+      name: TemporaryCacheKeys
+      items: []
+    - uid: '@azure/msal-browser.TestStorageManager'
+      name: TestStorageManager
+      items: []
+    - uid: '@azure/msal-browser.TokenCache'
+      name: TokenCache
+      items: []
+    - uid: '@azure/msal-browser.WrapperSKU'
+      name: WrapperSKU
+      items: []
+    - uid: '@azure/msal-browser.XhrClient'
+      name: XhrClient
+      items: []

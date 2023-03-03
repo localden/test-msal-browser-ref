@@ -1,0 +1,15 @@
+### YamlMime:TSTypeAlias
+name: RedirectParams
+uid: '@azure/msal-browser.RedirectParams'
+package: '@azure/msal-browser'
+summary: ''
+fullName: RedirectParams
+remarks: ''
+isDeprecated: false
+syntax: |
+  type RedirectParams = InteractionParams & {
+    navigationClient: INavigationClient,
+    onRedirectNavigate?: undefined | ((url: string) => void | boolean),
+    redirectStartPage: string,
+    redirectTimeout: number,
+  }

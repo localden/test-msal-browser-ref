@@ -1,0 +1,15 @@
+### YamlMime:TSTypeAlias
+name: BrowserConfiguration
+uid: '@azure/msal-browser.BrowserConfiguration'
+package: '@azure/msal-browser'
+summary: ''
+fullName: BrowserConfiguration
+remarks: ''
+isDeprecated: false
+syntax: |
+  type BrowserConfiguration = {
+    auth: Required<BrowserAuthOptions>,
+    cache: Required<CacheOptions>,
+    system: Required<BrowserSystemOptions>,
+    telemetry: Required<BrowserTelemetryOptions>,
+  }

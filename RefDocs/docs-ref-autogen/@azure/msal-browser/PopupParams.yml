@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: PopupParams
+uid: '@azure/msal-browser.PopupParams'
+package: '@azure/msal-browser'
+summary: ''
+fullName: PopupParams
+remarks: ''
+isDeprecated: false
+syntax: |
+  type PopupParams = InteractionParams & {
+    popup?: Window | null,
+    popupName: string,
+    popupWindowAttributes: PopupWindowAttributes,
+  }

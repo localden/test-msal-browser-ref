@@ -1,0 +1,503 @@
+### YamlMime:TSPackage
+uid: '@azure/msal-browser'
+name: '@azure/msal-browser'
+summary: ''
+type: package
+classes:
+  - '@azure/msal-browser.ClientApplication'
+  - '@azure/msal-browser.PublicClientApplication'
+  - '@azure/msal-browser.NativeMessageHandler'
+  - '@azure/msal-browser.AsyncMemoryStorage'
+  - '@azure/msal-browser.BrowserCacheManager'
+  - '@azure/msal-browser.BrowserStorage'
+  - '@azure/msal-browser.CryptoKeyStore'
+  - '@azure/msal-browser.DatabaseStorage'
+  - '@azure/msal-browser.MemoryStorage'
+  - '@azure/msal-browser.TokenCache'
+  - '@azure/msal-browser.BrowserCrypto'
+  - '@azure/msal-browser.CryptoOps'
+  - '@azure/msal-browser.GuidGenerator'
+  - '@azure/msal-browser.ModernBrowserCrypto'
+  - '@azure/msal-browser.MsBrowserCrypto'
+  - '@azure/msal-browser.MsrBrowserCrypto'
+  - '@azure/msal-browser.PkceGenerator'
+  - '@azure/msal-browser.SignedHttpRequest'
+  - '@azure/msal-browser.Base64Decode'
+  - '@azure/msal-browser.Base64Encode'
+  - '@azure/msal-browser.BrowserAuthError'
+  - '@azure/msal-browser.BrowserConfigurationAuthError'
+  - '@azure/msal-browser.NativeAuthError'
+  - '@azure/msal-browser.EventHandler'
+  - '@azure/msal-browser.EventMessageUtils'
+  - '@azure/msal-browser.BaseInteractionClient'
+  - '@azure/msal-browser.HybridSpaAuthorizationCodeClient'
+  - '@azure/msal-browser.NativeInteractionClient'
+  - '@azure/msal-browser.PopupClient'
+  - '@azure/msal-browser.RedirectClient'
+  - '@azure/msal-browser.SilentAuthCodeClient'
+  - '@azure/msal-browser.SilentCacheClient'
+  - '@azure/msal-browser.SilentIframeClient'
+  - '@azure/msal-browser.SilentRefreshClient'
+  - '@azure/msal-browser.StandardInteractionClient'
+  - '@azure/msal-browser.InteractionHandler'
+  - '@azure/msal-browser.RedirectHandler'
+  - '@azure/msal-browser.SilentHandler'
+  - '@azure/msal-browser.NavigationClient'
+  - '@azure/msal-browser.FetchClient'
+  - '@azure/msal-browser.XhrClient'
+  - '@azure/msal-browser.BrowserPerformanceClient'
+  - '@azure/msal-browser.BrowserPerformanceMeasurement'
+  - '@azure/msal-browser.BrowserProtocolUtils'
+  - '@azure/msal-browser.BrowserStringUtils'
+  - '@azure/msal-browser.BrowserUtils'
+  - '@azure/msal-browser.MathUtils'
+  - '@azure/msal-browser.TestStorageManager'
+interfaces:
+  - '@azure/msal-browser.IPublicClientApplication'
+  - '@azure/msal-browser.IAsyncStorage'
+  - '@azure/msal-browser.ITokenCache'
+  - '@azure/msal-browser.IWindowStorage'
+  - '@azure/msal-browser.ISubtleCrypto'
+  - '@azure/msal-browser.INavigationClient'
+functions:
+  - name: acquireTokenByCode()
+    uid: '@azure/msal-browser.acquireTokenByCode'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function acquireTokenByCode(): Promise<any>'
+      return:
+        description: ''
+        type: Promise&lt;any&gt;
+  - name: acquireTokenPopup()
+    uid: '@azure/msal-browser.acquireTokenPopup'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function acquireTokenPopup(): Promise<any>'
+      return:
+        description: ''
+        type: Promise&lt;any&gt;
+  - name: acquireTokenRedirect()
+    uid: '@azure/msal-browser.acquireTokenRedirect'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function acquireTokenRedirect(): Promise<void>'
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: acquireTokenSilent()
+    uid: '@azure/msal-browser.acquireTokenSilent'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function acquireTokenSilent(): Promise<any>'
+      return:
+        description: ''
+        type: Promise&lt;any&gt;
+  - name: addEventCallback()
+    uid: '@azure/msal-browser.addEventCallback'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function addEventCallback(): null'
+      return:
+        description: ''
+        type: 'null'
+  - name: addPerformanceCallback()
+    uid: '@azure/msal-browser.addPerformanceCallback'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function addPerformanceCallback(): string'
+      return:
+        description: ''
+        type: string
+  - name: disableAccountStorageEvents()
+    uid: '@azure/msal-browser.disableAccountStorageEvents'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function disableAccountStorageEvents()
+  - name: enableAccountStorageEvents()
+    uid: '@azure/msal-browser.enableAccountStorageEvents'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function enableAccountStorageEvents()
+  - name: getAccountByHomeId()
+    uid: '@azure/msal-browser.getAccountByHomeId'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getAccountByHomeId(): null'
+      return:
+        description: ''
+        type: 'null'
+  - name: getAccountByLocalId()
+    uid: '@azure/msal-browser.getAccountByLocalId'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getAccountByLocalId(): null'
+      return:
+        description: ''
+        type: 'null'
+  - name: getAccountByUsername()
+    uid: '@azure/msal-browser.getAccountByUsername'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getAccountByUsername(): null'
+      return:
+        description: ''
+        type: 'null'
+  - name: getActiveAccount()
+    uid: '@azure/msal-browser.getActiveAccount'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getActiveAccount(): null'
+      return:
+        description: ''
+        type: 'null'
+  - name: getAllAccounts()
+    uid: '@azure/msal-browser.getAllAccounts'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getAllAccounts(): never[]'
+      return:
+        description: ''
+        type: 'never[]'
+  - name: getConfiguration()
+    uid: '@azure/msal-browser.getConfiguration'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getConfiguration(): never'
+      return:
+        description: ''
+        type: never
+  - name: getLogger()
+    uid: '@azure/msal-browser.getLogger'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getLogger(): never'
+      return:
+        description: ''
+        type: never
+  - name: getTokenCache()
+    uid: '@azure/msal-browser.getTokenCache'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getTokenCache(): never'
+      return:
+        description: ''
+        type: never
+  - name: handleRedirectPromise()
+    uid: '@azure/msal-browser.handleRedirectPromise'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function handleRedirectPromise(): Promise<any>'
+      return:
+        description: ''
+        type: Promise&lt;any&gt;
+  - name: initialize()
+    uid: '@azure/msal-browser.initialize'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function initialize(): Promise<void>'
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: initializeWrapperLibrary()
+    uid: '@azure/msal-browser.initializeWrapperLibrary'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function initializeWrapperLibrary()
+  - name: loginPopup()
+    uid: '@azure/msal-browser.loginPopup'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function loginPopup(): Promise<any>'
+      return:
+        description: ''
+        type: Promise&lt;any&gt;
+  - name: loginRedirect()
+    uid: '@azure/msal-browser.loginRedirect'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function loginRedirect(): Promise<void>'
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: logout()
+    uid: '@azure/msal-browser.logout'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function logout(): Promise<void>'
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: logoutPopup()
+    uid: '@azure/msal-browser.logoutPopup'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function logoutPopup(): Promise<void>'
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: logoutRedirect()
+    uid: '@azure/msal-browser.logoutRedirect'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function logoutRedirect(): Promise<void>'
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: removeEventCallback()
+    uid: '@azure/msal-browser.removeEventCallback'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function removeEventCallback()
+  - name: removePerformanceCallback()
+    uid: '@azure/msal-browser.removePerformanceCallback'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function removePerformanceCallback(): false'
+      return:
+        description: ''
+        type: 'false'
+  - name: setActiveAccount()
+    uid: '@azure/msal-browser.setActiveAccount'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function setActiveAccount()
+  - name: setLogger()
+    uid: '@azure/msal-browser.setLogger'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function setLogger()
+  - name: setNavigationClient()
+    uid: '@azure/msal-browser.setNavigationClient'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function setNavigationClient()
+  - name: ssoSilent()
+    uid: '@azure/msal-browser.ssoSilent'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function ssoSilent(): Promise<any>'
+      return:
+        description: ''
+        type: Promise&lt;any&gt;
+  - name: 'DEFAULT_BROWSER_CACHE_MANAGER(string, Logger)'
+    uid: '@azure/msal-browser.DEFAULT_BROWSER_CACHE_MANAGER'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function DEFAULT_BROWSER_CACHE_MANAGER(clientId: string, logger:
+        Logger): BrowserCacheManager
+      parameters:
+        - id: clientId
+          type: string
+          description: ''
+        - id: logger
+          type: Logger
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@azure/msal-browser.BrowserCacheManager" />
+  - name: >-
+      buildConfiguration({ userInputAuth: { authority?: undefined | string,
+      authorityMetadata?: undefined | string, azureCloudOptions?:
+      AzureCloudOptions, clientCapabilities?: Array<string>, clientId: string,
+      cloudDiscoveryMetadata?: undefined | string, knownAuthorities?:
+      Array<string>, navigateToLoginRequestUrl?: undefined | false | true,
+      postLogoutRedirectUri?: string | null, protocolMode?: ProtocolMode,
+      redirectUri?: undefined | string, skipAuthorityMetadataCache?: undefined |
+      false | true }, userInputCache: undefined | { cacheLocation?:
+      BrowserCacheLocation | string, secureCookies?: undefined | false | true,
+      storeAuthStateInCookie?: undefined | false | true }, userInputSystem: any,
+      userInputTelemetry: undefined | { application?: ApplicationTelemetry } },
+      boolean)
+    uid: '@azure/msal-browser.buildConfiguration'
+    package: '@azure/msal-browser'
+    summary: >-
+      MSAL function that sets the default options when not explicitly configured
+      from app developer
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function buildConfiguration(__namedParameters: { userInputAuth: {
+        authority?: undefined | string, authorityMetadata?: undefined | string,
+        azureCloudOptions?: AzureCloudOptions, clientCapabilities?:
+        Array<string>, clientId: string, cloudDiscoveryMetadata?: undefined |
+        string, knownAuthorities?: Array<string>, navigateToLoginRequestUrl?:
+        undefined | false | true, postLogoutRedirectUri?: string | null,
+        protocolMode?: ProtocolMode, redirectUri?: undefined | string,
+        skipAuthorityMetadataCache?: undefined | false | true }, userInputCache:
+        undefined | { cacheLocation?: BrowserCacheLocation | string,
+        secureCookies?: undefined | false | true, storeAuthStateInCookie?:
+        undefined | false | true }, userInputSystem: any, userInputTelemetry:
+        undefined | { application?: ApplicationTelemetry } },
+        isBrowserEnvironment: boolean): BrowserConfiguration
+      parameters:
+        - id: __namedParameters
+          type: >-
+            { userInputAuth: { authority?: undefined | string,
+            authorityMetadata?: undefined | string, azureCloudOptions?:
+            AzureCloudOptions, clientCapabilities?: Array&lt;string&gt;,
+            clientId: string, cloudDiscoveryMetadata?: undefined | string,
+            knownAuthorities?: Array&lt;string&gt;, navigateToLoginRequestUrl?:
+            undefined | false | true, postLogoutRedirectUri?: string | null,
+            protocolMode?: ProtocolMode, redirectUri?: undefined | string,
+            skipAuthorityMetadataCache?: undefined | false | true },
+            userInputCache: undefined | { cacheLocation?: BrowserCacheLocation |
+            string, secureCookies?: undefined | false | true,
+            storeAuthStateInCookie?: undefined | false | true },
+            userInputSystem: any, userInputTelemetry: undefined | {
+            application?: ApplicationTelemetry } }
+          description: ''
+        - id: isBrowserEnvironment
+          type: boolean
+          description: ''
+      return:
+        description: Configuration object
+        type: <xref uid="@azure/msal-browser.BrowserConfiguration" />
+typeAliases:
+  - '@azure/msal-browser.NativeExtensionRequest'
+  - '@azure/msal-browser.NativeExtensionRequestBody'
+  - '@azure/msal-browser.NativeTokenRequest'
+  - '@azure/msal-browser.MATS'
+  - '@azure/msal-browser.NativeAccountInfo'
+  - '@azure/msal-browser.NativeResponse'
+  - '@azure/msal-browser.NativeResponseProperties'
+  - '@azure/msal-browser.LoadTokenOptions'
+  - '@azure/msal-browser.BrowserAuthOptions'
+  - '@azure/msal-browser.BrowserConfiguration'
+  - '@azure/msal-browser.BrowserSystemOptions'
+  - '@azure/msal-browser.BrowserTelemetryOptions'
+  - '@azure/msal-browser.CacheOptions'
+  - '@azure/msal-browser.Configuration'
+  - '@azure/msal-browser.CryptoOptions'
+  - '@azure/msal-browser.CachedKeyPair'
+  - '@azure/msal-browser.SignedHttpRequestOptions'
+  - '@azure/msal-browser.OSError'
+  - '@azure/msal-browser.EventCallbackFunction'
+  - '@azure/msal-browser.EventError'
+  - '@azure/msal-browser.EventMessage'
+  - '@azure/msal-browser.EventPayload'
+  - '@azure/msal-browser.PopupEvent'
+  - '@azure/msal-browser.PopupParams'
+  - '@azure/msal-browser.InteractionParams'
+  - '@azure/msal-browser.RedirectParams'
+  - '@azure/msal-browser.NavigationOptions'
+  - '@azure/msal-browser.AuthorizationCodeRequest'
+  - '@azure/msal-browser.AuthorizationUrlRequest'
+  - '@azure/msal-browser.EndSessionPopupRequest'
+  - '@azure/msal-browser.EndSessionRequest'
+  - '@azure/msal-browser.PopupRequest'
+  - '@azure/msal-browser.PopupPosition'
+  - '@azure/msal-browser.PopupSize'
+  - '@azure/msal-browser.PopupWindowAttributes'
+  - '@azure/msal-browser.RedirectRequest'
+  - '@azure/msal-browser.SilentRequest'
+  - '@azure/msal-browser.SsoSilentRequest'
+  - '@azure/msal-browser.BrowserStateObject'
+enums:
+  - '@azure/msal-browser.CryptoKeyStoreNames'
+  - '@azure/msal-browser.NativeStatusCode'
+  - '@azure/msal-browser.EventType'
+  - '@azure/msal-browser.ApiId'
+  - '@azure/msal-browser.BrowserCacheLocation'
+  - '@azure/msal-browser.CacheLookupPolicy'
+  - '@azure/msal-browser.HTTP_REQUEST_TYPE'
+  - '@azure/msal-browser.InMemoryCacheKeys'
+  - '@azure/msal-browser.InteractionStatus'
+  - '@azure/msal-browser.InteractionType'
+  - '@azure/msal-browser.NativeExtensionMethod'
+  - '@azure/msal-browser.TemporaryCacheKeys'
+  - '@azure/msal-browser.WrapperSKU'

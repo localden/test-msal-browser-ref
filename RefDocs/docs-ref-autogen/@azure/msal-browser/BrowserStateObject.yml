@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: BrowserStateObject
+uid: '@azure/msal-browser.BrowserStateObject'
+package: '@azure/msal-browser'
+summary: ''
+fullName: BrowserStateObject
+remarks: ''
+isDeprecated: false
+syntax: |
+  type BrowserStateObject = { interactionType: InteractionType }

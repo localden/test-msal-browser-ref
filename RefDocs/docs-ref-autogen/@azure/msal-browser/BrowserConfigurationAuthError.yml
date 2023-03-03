@@ -1,0 +1,139 @@
+### YamlMime:TSType
+name: BrowserConfigurationAuthError
+uid: '@azure/msal-browser.BrowserConfigurationAuthError'
+package: '@azure/msal-browser'
+summary: Browser library error class thrown by the MSAL.js library for SPAs
+fullName: BrowserConfigurationAuthError
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: 'BrowserConfigurationAuthError(string, undefined | string)'
+    uid: '@azure/msal-browser.BrowserConfigurationAuthError.constructor'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new BrowserConfigurationAuthError(errorCode: string, errorMessage?:
+        undefined | string)
+      parameters:
+        - id: errorCode
+          type: string
+          description: ''
+        - id: errorMessage
+          type: undefined | string
+          description: ''
+methods:
+  - name: createEntropyNotProvided()
+    uid: '@azure/msal-browser.BrowserConfigurationAuthError.createEntropyNotProvided'
+    package: '@azure/msal-browser'
+    summary: >-
+      Creates an error thrown when a crypto interface that requires entropy is
+      initialized without entropy
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function createEntropyNotProvided():
+        BrowserConfigurationAuthError
+      return:
+        description: ''
+        type: <xref uid="@azure/msal-browser.BrowserConfigurationAuthError" />
+  - name: createInMemoryRedirectUnavailableError()
+    uid: >-
+      @azure/msal-browser.BrowserConfigurationAuthError.createInMemoryRedirectUnavailableError
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function createInMemoryRedirectUnavailableError():
+        BrowserConfigurationAuthError
+      return:
+        description: ''
+        type: <xref uid="@azure/msal-browser.BrowserConfigurationAuthError" />
+  - name: createPostLogoutRedirectUriEmptyError()
+    uid: >-
+      @azure/msal-browser.BrowserConfigurationAuthError.createPostLogoutRedirectUriEmptyError
+    package: '@azure/msal-browser'
+    summary: >-
+      Creates an error thrown when the post-logout redirect uri is empty (not
+      set by caller)
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function createPostLogoutRedirectUriEmptyError():
+        BrowserConfigurationAuthError
+      return:
+        description: ''
+        type: <xref uid="@azure/msal-browser.BrowserConfigurationAuthError" />
+  - name: createRedirectCallbacksNotSetError()
+    uid: >-
+      @azure/msal-browser.BrowserConfigurationAuthError.createRedirectCallbacksNotSetError
+    package: '@azure/msal-browser'
+    summary: >-
+      Creates error thrown when redirect callbacks are not set before calling
+      loginRedirect() or acquireTokenRedirect().
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function createRedirectCallbacksNotSetError():
+        BrowserConfigurationAuthError
+      return:
+        description: ''
+        type: <xref uid="@azure/msal-browser.BrowserConfigurationAuthError" />
+  - name: createRedirectUriEmptyError()
+    uid: >-
+      @azure/msal-browser.BrowserConfigurationAuthError.createRedirectUriEmptyError
+    package: '@azure/msal-browser'
+    summary: Creates an error thrown when the redirect uri is empty (not set by caller)
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function createRedirectUriEmptyError():
+        BrowserConfigurationAuthError
+      return:
+        description: ''
+        type: <xref uid="@azure/msal-browser.BrowserConfigurationAuthError" />
+  - name: createStorageNotSupportedError(string)
+    uid: >-
+      @azure/msal-browser.BrowserConfigurationAuthError.createStorageNotSupportedError
+    package: '@azure/msal-browser'
+    summary: Creates error thrown when given storage location is not supported.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function createStorageNotSupportedError(givenStorageLocation:
+        string): BrowserConfigurationAuthError
+      parameters:
+        - id: givenStorageLocation
+          type: string
+          description: |+
+
+      return:
+        description: ''
+        type: <xref uid="@azure/msal-browser.BrowserConfigurationAuthError" />
+  - name: createStubPcaInstanceCalledError()
+    uid: >-
+      @azure/msal-browser.BrowserConfigurationAuthError.createStubPcaInstanceCalledError
+    package: '@azure/msal-browser'
+    summary: >-
+      Creates error thrown when the stub instance of PublicClientApplication is
+      called.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function createStubPcaInstanceCalledError():
+        BrowserConfigurationAuthError
+      return:
+        description: ''
+        type: <xref uid="@azure/msal-browser.BrowserConfigurationAuthError" />
+extends: any

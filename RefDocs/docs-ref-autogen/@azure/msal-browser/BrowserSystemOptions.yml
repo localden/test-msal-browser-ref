@@ -1,0 +1,25 @@
+### YamlMime:TSTypeAlias
+name: BrowserSystemOptions
+uid: '@azure/msal-browser.BrowserSystemOptions'
+package: '@azure/msal-browser'
+summary: ''
+fullName: BrowserSystemOptions
+remarks: ''
+isDeprecated: false
+syntax: |
+  type BrowserSystemOptions = SystemOptions & {
+    allowNativeBroker?: undefined | false | true,
+    allowRedirectInIframe?: undefined | false | true,
+    asyncPopups?: undefined | false | true,
+    cryptoOptions?: CryptoOptions,
+    iframeHashTimeout?: undefined | number,
+    loadFrameTimeout?: undefined | number,
+    loggerOptions?: LoggerOptions,
+    nativeBrokerHandshakeTimeout?: undefined | number,
+    navigateFrameWait?: undefined | number,
+    navigationClient?: INavigationClient,
+    networkClient?: INetworkModule,
+    pollIntervalMilliseconds?: undefined | number,
+    redirectNavigationTimeout?: undefined | number,
+    windowHashTimeout?: undefined | number,
+  }

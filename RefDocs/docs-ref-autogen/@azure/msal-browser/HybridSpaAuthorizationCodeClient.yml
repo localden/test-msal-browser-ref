@@ -1,0 +1,23 @@
+### YamlMime:TSType
+name: HybridSpaAuthorizationCodeClient
+uid: '@azure/msal-browser.HybridSpaAuthorizationCodeClient'
+package: '@azure/msal-browser'
+summary: ''
+fullName: HybridSpaAuthorizationCodeClient
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: HybridSpaAuthorizationCodeClient(ClientConfiguration)
+    uid: '@azure/msal-browser.HybridSpaAuthorizationCodeClient.constructor'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new HybridSpaAuthorizationCodeClient(config: ClientConfiguration)'
+      parameters:
+        - id: config
+          type: ClientConfiguration
+          description: ''
+extends: any

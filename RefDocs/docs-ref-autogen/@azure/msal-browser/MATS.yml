@@ -1,0 +1,28 @@
+### YamlMime:TSTypeAlias
+name: MATS
+uid: '@azure/msal-browser.MATS'
+package: '@azure/msal-browser'
+summary: >-
+  The native token broker can optionally include additional information about
+  operations it performs. If that data is returned, MSAL.js will include the
+  following properties in the telemetry it collects.
+fullName: MATS
+remarks: ''
+isDeprecated: false
+syntax: |
+  type MATS = {
+    account_join_on_end?: undefined | string,
+    account_join_on_start?: undefined | string,
+    api_error_code?: undefined | number,
+    broker_version?: undefined | string,
+    device_join?: undefined | string,
+    http_event_count?: undefined | number,
+    http_status?: undefined | number,
+    is_cached?: undefined | number,
+    prompt_behavior?: undefined | string,
+    silent_bi_sub_code?: undefined | number,
+    silent_code?: undefined | number,
+    silent_message?: undefined | string,
+    silent_status?: undefined | number,
+    ui_visible?: undefined | false | true,
+  }

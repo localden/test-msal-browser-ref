@@ -1,0 +1,157 @@
+### YamlMime:TSType
+name: BrowserPerformanceClient
+uid: '@azure/msal-browser.BrowserPerformanceClient'
+package: '@azure/msal-browser'
+summary: ''
+fullName: BrowserPerformanceClient
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      BrowserPerformanceClient(string, string, Logger, string, string,
+      ApplicationTelemetry, CryptoOptions)
+    uid: '@azure/msal-browser.BrowserPerformanceClient.constructor'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new BrowserPerformanceClient(clientId: string, authority: string,
+        logger: Logger, libraryName: string, libraryVersion: string,
+        applicationTelemetry: ApplicationTelemetry, cryptoOptions:
+        CryptoOptions)
+      parameters:
+        - id: clientId
+          type: string
+          description: ''
+        - id: authority
+          type: string
+          description: ''
+        - id: logger
+          type: Logger
+          description: ''
+        - id: libraryName
+          type: string
+          description: ''
+        - id: libraryVersion
+          type: string
+          description: ''
+        - id: applicationTelemetry
+          type: ApplicationTelemetry
+          description: ''
+        - id: cryptoOptions
+          type: <xref uid="@azure/msal-browser.CryptoOptions" />
+          description: ''
+methods:
+  - name: >-
+      addQueueMeasurement(PerformanceEvents, undefined | string, undefined |
+      number, undefined | false | true)
+    uid: '@azure/msal-browser.BrowserPerformanceClient.addQueueMeasurement'
+    package: '@azure/msal-browser'
+    summary: Calculates and adds queue time measurement for given performance event.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function addQueueMeasurement(eventName: PerformanceEvents,
+        correlationId?: undefined | string, queueTime?: undefined | number,
+        manuallyCompleted?: undefined | false | true)
+      parameters:
+        - id: eventName
+          type: PerformanceEvents
+          description: ''
+        - id: correlationId
+          type: undefined | string
+          description: ''
+        - id: queueTime
+          type: undefined | number
+          description: ''
+        - id: manuallyCompleted
+          type: undefined | false | true
+          description: indicator for manually completed queue measurements
+  - name: generateId()
+    uid: '@azure/msal-browser.BrowserPerformanceClient.generateId'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function generateId(): string'
+      return:
+        description: ''
+        type: string
+  - name: 'setPreQueueTime(PerformanceEvents, undefined | string)'
+    uid: '@azure/msal-browser.BrowserPerformanceClient.setPreQueueTime'
+    package: '@azure/msal-browser'
+    summary: Adds pre-queue time to preQueueTimeByCorrelationId map.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setPreQueueTime(eventName: PerformanceEvents, correlationId?:
+        undefined | string)
+      parameters:
+        - id: eventName
+          type: PerformanceEvents
+          description: ''
+        - id: correlationId
+          type: undefined | string
+          description: ''
+  - name: 'startMeasurement(PerformanceEvents, undefined | string)'
+    uid: '@azure/msal-browser.BrowserPerformanceClient.startMeasurement'
+    package: '@azure/msal-browser'
+    summary: >-
+      Starts measuring performance for a given operation. Returns a function
+      that should be used to end the measurement.
+
+      Also captures browser page visibilityState.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function startMeasurement(measureName: PerformanceEvents,
+        correlationId?: undefined | string): InProgressPerformanceEvent
+      parameters:
+        - id: measureName
+          type: PerformanceEvents
+          description: ''
+        - id: correlationId
+          type: undefined | string
+          description: ''
+      return:
+        description: ''
+        type: InProgressPerformanceEvent
+  - name: 'startPerformanceMeasuremeant(string, string)'
+    uid: '@azure/msal-browser.BrowserPerformanceClient.startPerformanceMeasuremeant'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function startPerformanceMeasuremeant(measureName: string,
+        correlationId: string): IPerformanceMeasurement
+      parameters:
+        - id: measureName
+          type: string
+          description: ''
+        - id: correlationId
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: IPerformanceMeasurement
+  - name: supportsBrowserPerformanceNow()
+    uid: '@azure/msal-browser.BrowserPerformanceClient.supportsBrowserPerformanceNow'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function supportsBrowserPerformanceNow(): boolean'
+      return:
+        description: ''
+        type: boolean
+extends: any

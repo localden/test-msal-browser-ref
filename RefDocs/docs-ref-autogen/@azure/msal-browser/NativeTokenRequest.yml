@@ -1,0 +1,31 @@
+### YamlMime:TSTypeAlias
+name: NativeTokenRequest
+uid: '@azure/msal-browser.NativeTokenRequest'
+package: '@azure/msal-browser'
+summary: Token request which native broker will use to acquire tokens
+fullName: NativeTokenRequest
+remarks: ''
+isDeprecated: false
+syntax: |
+  type NativeTokenRequest = {
+    accountId: string,
+    authority: string,
+    claims?: undefined | string,
+    clientId: string,
+    correlationId: string,
+    extendedExpiryToken?: undefined | false | true,
+    extraParameters?: StringDict,
+    keyId?: undefined | string,
+    nonce?: undefined | string,
+    prompt?: undefined | string,
+    redirectUri: string,
+    reqCnf?: undefined | string,
+    resourceRequestMethod?: undefined | string,
+    resourceRequestUri?: undefined | string,
+    scope: string,
+    shrClaims?: undefined | string,
+    shrNonce?: undefined | string,
+    state?: undefined | string,
+    tokenType?: undefined | string,
+    windowTitleSubstring: string,
+  }

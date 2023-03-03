@@ -1,0 +1,105 @@
+### YamlMime:TSType
+name: NativeAuthError
+uid: '@azure/msal-browser.NativeAuthError'
+package: '@azure/msal-browser'
+summary: ''
+fullName: NativeAuthError
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: 'NativeAuthError(string, string, OSError)'
+    uid: '@azure/msal-browser.NativeAuthError.constructor'
+    package: '@azure/msal-browser'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new NativeAuthError(errorCode: string, description: string, ext?:
+        OSError)
+      parameters:
+        - id: errorCode
+          type: string
+          description: ''
+        - id: description
+          type: string
+          description: ''
+        - id: ext
+          type: <xref uid="@azure/msal-browser.OSError" />
+          description: ''
+properties:
+  - name: ext
+    uid: '@azure/msal-browser.NativeAuthError.ext'
+    package: '@azure/msal-browser'
+    summary: ''
+    fullName: ext
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'ext: OSError | undefined'
+      return:
+        description: ''
+        type: <xref uid="@azure/msal-browser.OSError" /> | undefined
+methods:
+  - name: 'createError(string, string, OSError)'
+    uid: '@azure/msal-browser.NativeAuthError.createError'
+    package: '@azure/msal-browser'
+    summary: Create the appropriate error object based on the WAM status code.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function createError(code: string, description: string, ext?:
+        OSError): AuthError
+      parameters:
+        - id: code
+          type: string
+          description: ''
+        - id: description
+          type: string
+          description: ''
+        - id: ext
+          type: <xref uid="@azure/msal-browser.OSError" />
+          description: ''
+      return:
+        description: ''
+        type: AuthError
+  - name: createTokensNotFoundInCacheError()
+    uid: '@azure/msal-browser.NativeAuthError.createTokensNotFoundInCacheError'
+    package: '@azure/msal-browser'
+    summary: Creates a tokens not found error when the internal cache look up fails
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static function createTokensNotFoundInCacheError(): NativeAuthError'
+      return:
+        description: 'NativeAuthError: tokensNotFoundInCache'
+        type: <xref uid="@azure/msal-browser.NativeAuthError" />
+  - name: createUserSwitchError()
+    uid: '@azure/msal-browser.NativeAuthError.createUserSwitchError'
+    package: '@azure/msal-browser'
+    summary: >-
+      Creates user switch error when the user chooses a different account in the
+      native broker prompt
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static function createUserSwitchError(): NativeAuthError'
+      return:
+        description: ''
+        type: <xref uid="@azure/msal-browser.NativeAuthError" />
+  - name: isFatal()
+    uid: '@azure/msal-browser.NativeAuthError.isFatal'
+    package: '@azure/msal-browser'
+    summary: >-
+      These errors should result in a fallback to the 'standard' browser based
+      auth flow.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function isFatal(): boolean'
+      return:
+        description: ''
+        type: boolean
+extends: any
