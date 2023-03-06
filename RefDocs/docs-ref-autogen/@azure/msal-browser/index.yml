@@ -51,7 +51,6 @@ classes:
   - '@azure/msal-browser.BrowserStringUtils'
   - '@azure/msal-browser.BrowserUtils'
   - '@azure/msal-browser.MathUtils'
-  - '@azure/msal-browser.TestStorageManager'
 interfaces:
   - '@azure/msal-browser.IPublicClientApplication'
   - '@azure/msal-browser.IAsyncStorage'

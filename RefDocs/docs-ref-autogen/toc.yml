@@ -308,9 +308,6 @@
     - uid: '@azure/msal-browser.TemporaryCacheKeys'
       name: TemporaryCacheKeys
       items: []
-    - uid: '@azure/msal-browser.TestStorageManager'
-      name: TestStorageManager
-      items: []
     - uid: '@azure/msal-browser.TokenCache'
       name: TokenCache
       items: []
