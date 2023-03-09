@@ -12,7 +12,7 @@ constructors:
       NativeInteractionClient(BrowserConfiguration, BrowserCacheManager,
       ICrypto, Logger, EventHandler, INavigationClient, ApiId,
       IPerformanceClient, NativeMessageHandler, string, BrowserCacheManager,
-      undefined | string)
+      string)
     uid: '@azure/msal-browser.NativeInteractionClient.constructor'
     package: '@azure/msal-browser'
     summary: ''
@@ -25,7 +25,7 @@ constructors:
         Logger, eventHandler: EventHandler, navigationClient: INavigationClient,
         apiId: ApiId, performanceClient: IPerformanceClient, provider:
         NativeMessageHandler, accountId: string, nativeStorageImpl:
-        BrowserCacheManager, correlationId?: undefined | string)
+        BrowserCacheManager, correlationId?: string)
       parameters:
         - id: config
           type: <xref uid="@azure/msal-browser.BrowserConfiguration" />
@@ -61,20 +61,20 @@ constructors:
           type: <xref uid="@azure/msal-browser.BrowserCacheManager" />
           description: ''
         - id: correlationId
-          type: undefined | string
+          type: string
           description: ''
 inheritedMethods:
-  - name: getRedirectUri(undefined | string)
+  - name: getRedirectUri(string)
     uid: '@azure/msal-browser.NativeInteractionClient.getRedirectUri'
     package: '@azure/msal-browser'
     summary: Use to get the redirect uri configured in MSAL or null.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getRedirectUri(requestRedirectUri?: undefined | string): string'
+      content: 'function getRedirectUri(requestRedirectUri?: string): string'
       parameters:
         - id: requestRedirectUri
-          type: undefined | string
+          type: string
           description: ''
       return:
         description: Redirect URL
@@ -83,7 +83,10 @@ inheritedMethods:
       <b>Inherited From</b>
       [BaseInteractionClient.getRedirectUri](xref:@azure/msal-browser.BaseInteractionClient.getRedirectUri)
 methods:
-  - name: acquireToken(PopupRequest | SilentRequest | SsoSilentRequest)
+  - name: >-
+      acquireToken(PopupRequest | Partial<Omit<CommonAuthorizationUrlRequest,
+      "responseMode" | "codeChallenge" | "codeChallengeMethod" |
+      "requestedClaimsHash" | "nativeBroker">> | SilentRequest)
     uid: '@azure/msal-browser.NativeInteractionClient.acquireToken'
     package: '@azure/msal-browser'
     summary: Acquire token from native platform via browser extension
@@ -91,16 +94,19 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function acquireToken(request: PopupRequest | SilentRequest |
-        SsoSilentRequest): Promise<AuthenticationResult>
+        function acquireToken(request: PopupRequest |
+        Partial<Omit<CommonAuthorizationUrlRequest, "responseMode" |
+        "codeChallenge" | "codeChallengeMethod" | "requestedClaimsHash" |
+        "nativeBroker">> | SilentRequest): Promise<AuthenticationResult>
       parameters:
         - id: request
           type: >-
-            <xref uid="@azure/msal-browser.PopupRequest" /> | <xref
-            uid="@azure/msal-browser.SilentRequest" /> | <xref
-            uid="@azure/msal-browser.SsoSilentRequest" />
-          description: |+
-
+            <xref uid="@azure/msal-browser.PopupRequest" /> |
+            Partial&lt;Omit&lt;CommonAuthorizationUrlRequest, "responseMode" |
+            "codeChallenge" | "codeChallengeMethod" | "requestedClaimsHash" |
+            "nativeBroker"&gt;&gt; | <xref
+            uid="@azure/msal-browser.SilentRequest" />
+          description: ''
       return:
         description: ''
         type: Promise&lt;AuthenticationResult&gt;
@@ -117,8 +123,7 @@ methods:
       parameters:
         - id: request
           type: <xref uid="@azure/msal-browser.RedirectRequest" />
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;void&gt;
@@ -131,10 +136,10 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function handleRedirectPromise(): Promise<AuthenticationResult | null>'
+      content: 'function handleRedirectPromise(): Promise<any>'
       return:
         description: ''
-        type: Promise&lt;AuthenticationResult | null&gt;
+        type: Promise&lt;any&gt;
   - name: logout()
     uid: '@azure/msal-browser.NativeInteractionClient.logout'
     package: '@azure/msal-browser'

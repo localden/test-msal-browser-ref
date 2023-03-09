@@ -14,7 +14,7 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: 'BrowserCacheManager(string, Required<CacheOptions>, ICrypto, Logger)'
+  - name: BrowserCacheManager(string, Required<CacheOptions>, ICrypto, Logger)
     uid: '@azure/msal-browser.BrowserCacheManager.constructor'
     package: '@azure/msal-browser'
     summary: ''
@@ -38,7 +38,7 @@ constructors:
           type: Logger
           description: ''
 methods:
-  - name: 'cacheCodeRequest(CommonAuthorizationCodeRequest, ICrypto)'
+  - name: cacheCodeRequest(CommonAuthorizationCodeRequest, ICrypto)
     uid: '@azure/msal-browser.BrowserCacheManager.cacheCodeRequest'
     package: '@azure/msal-browser'
     summary: ''
@@ -71,8 +71,7 @@ methods:
       parameters:
         - id: interactionType
           type: <xref uid="@azure/msal-browser.InteractionType" />
-          description: |+
-
+          description: ''
   - name: cleanRequestByState(string)
     uid: '@azure/msal-browser.BrowserCacheManager.cleanRequestByState'
     package: '@azure/msal-browser'
@@ -84,8 +83,7 @@ methods:
       parameters:
         - id: stateString
           type: string
-          description: |+
-
+          description: ''
   - name: clear()
     uid: '@azure/msal-browser.BrowserCacheManager.clear'
     package: '@azure/msal-browser'
@@ -108,8 +106,7 @@ methods:
       parameters:
         - id: cookieName
           type: string
-          description: |+
-
+          description: ''
   - name: clearMsalCookies()
     uid: '@azure/msal-browser.BrowserCacheManager.clearMsalCookies'
     package: '@azure/msal-browser'
@@ -131,8 +128,7 @@ methods:
       parameters:
         - id: key
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: boolean
@@ -195,8 +191,7 @@ methods:
       parameters:
         - id: stateString
           type: string
-          description: |
-            State string for the request
+          description: State string for the request
       return:
         description: ''
         type: string
@@ -207,16 +202,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function getAccessTokenCredential(accessTokenKey: string):
-        AccessTokenEntity | null
+      content: 'function getAccessTokenCredential(accessTokenKey: string): any'
       parameters:
         - id: accessTokenKey
           type: string
           description: ''
       return:
         description: ''
-        type: AccessTokenEntity | null
+        type: any
   - name: getAccount(string)
     uid: '@azure/msal-browser.BrowserCacheManager.getAccount'
     package: '@azure/msal-browser'
@@ -224,15 +217,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getAccount(accountKey: string): AccountEntity | null'
+      content: 'function getAccount(accountKey: string): any'
       parameters:
         - id: accountKey
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
-        type: AccountEntity | null
+        type: any
   - name: >-
       getAccountInfoByFilter(Partial<Omit<AccountInfo, "idTokenClaims" |
       "name">>)
@@ -247,32 +239,29 @@ methods:
         "idTokenClaims" | "name">>): AccountInfo[]
       parameters:
         - id: accountFilter
-          type: 'Partial&lt;Omit&lt;AccountInfo, "idTokenClaims" | "name"&gt;&gt;'
+          type: Partial&lt;Omit&lt;AccountInfo, "idTokenClaims" | "name"&gt;&gt;
           description: ''
       return:
         description: ''
-        type: 'AccountInfo[]'
-  - name: 'getAccountInfoByHints(undefined | string, undefined | string)'
+        type: AccountInfo[]
+  - name: getAccountInfoByHints(string, string)
     uid: '@azure/msal-browser.BrowserCacheManager.getAccountInfoByHints'
     package: '@azure/msal-browser'
     summary: Checks the cache for accounts matching loginHint or SID
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function getAccountInfoByHints(loginHint?: undefined | string, sid?:
-        undefined | string): AccountInfo | null
+      content: 'function getAccountInfoByHints(loginHint?: string, sid?: string): any'
       parameters:
         - id: loginHint
-          type: undefined | string
+          type: string
           description: ''
         - id: sid
-          type: undefined | string
-          description: |+
-
+          type: string
+          description: ''
       return:
         description: ''
-        type: AccountInfo | null
+        type: any
   - name: getActiveAccount()
     uid: '@azure/msal-browser.BrowserCacheManager.getActiveAccount'
     package: '@azure/msal-browser'
@@ -280,10 +269,10 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getActiveAccount(): AccountInfo | null'
+      content: 'function getActiveAccount(): any'
       return:
         description: ''
-        type: AccountInfo | null
+        type: any
   - name: getAppMetadata(string)
     uid: '@azure/msal-browser.BrowserCacheManager.getAppMetadata'
     package: '@azure/msal-browser'
@@ -291,17 +280,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function getAppMetadata(appMetadataKey: string): AppMetadataEntity |
-        null
+      content: 'function getAppMetadata(appMetadataKey: string): any'
       parameters:
         - id: appMetadataKey
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
-        type: AppMetadataEntity | null
+        type: any
   - name: getAuthorityMetadata(string)
     uid: '@azure/msal-browser.BrowserCacheManager.getAuthorityMetadata'
     package: '@azure/msal-browser'
@@ -309,16 +295,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function getAuthorityMetadata(key: string): AuthorityMetadataEntity |
-        null
+      content: 'function getAuthorityMetadata(key: string): any'
       parameters:
         - id: key
           type: string
           description: ''
       return:
         description: ''
-        type: AuthorityMetadataEntity | null
+        type: any
   - name: getAuthorityMetadataKeys()
     uid: '@azure/msal-browser.BrowserCacheManager.getAuthorityMetadataKeys'
     package: '@azure/msal-browser'
@@ -326,10 +310,10 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getAuthorityMetadataKeys(): Array<string>'
+      content: 'function getAuthorityMetadataKeys(): string[]'
       return:
         description: ''
-        type: Array&lt;string&gt;
+        type: string[]
   - name: getCache()
     uid: '@azure/msal-browser.BrowserCacheManager.getCache'
     package: '@azure/msal-browser'
@@ -350,14 +334,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getCachedAuthority(cachedState: string): string | null'
+      content: 'function getCachedAuthority(cachedState: string): null | string'
       parameters:
         - id: cachedState
           type: string
           description: ''
       return:
         description: ''
-        type: string | null
+        type: null | string
   - name: getCachedNativeRequest()
     uid: '@azure/msal-browser.BrowserCacheManager.getCachedNativeRequest'
     package: '@azure/msal-browser'
@@ -365,11 +349,11 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getCachedNativeRequest(): NativeTokenRequest | null'
+      content: 'function getCachedNativeRequest(): null | NativeTokenRequest'
       return:
         description: ''
-        type: <xref uid="@azure/msal-browser.NativeTokenRequest" /> | null
-  - name: 'getCachedRequest(string, ICrypto)'
+        type: null | <xref uid="@azure/msal-browser.NativeTokenRequest" />
+  - name: getCachedRequest(string, ICrypto)
     uid: '@azure/msal-browser.BrowserCacheManager.getCachedRequest'
     package: '@azure/msal-browser'
     summary: >-
@@ -402,8 +386,7 @@ methods:
       parameters:
         - id: cookieLifeDays
           type: number
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: string
@@ -414,15 +397,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getIdTokenCredential(idTokenKey: string): IdTokenEntity | null'
+      content: 'function getIdTokenCredential(idTokenKey: string): any'
       parameters:
         - id: idTokenKey
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
-        type: IdTokenEntity | null
+        type: any
   - name: getInteractionInProgress()
     uid: '@azure/msal-browser.BrowserCacheManager.getInteractionInProgress'
     package: '@azure/msal-browser'
@@ -430,10 +412,10 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getInteractionInProgress(): string | null'
+      content: 'function getInteractionInProgress(): null | string'
       return:
         description: ''
-        type: string | null
+        type: null | string
   - name: getItem(string)
     uid: '@azure/msal-browser.BrowserCacheManager.getItem'
     package: '@azure/msal-browser'
@@ -441,15 +423,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getItem(key: string): string | null'
+      content: 'function getItem(key: string): null | string'
       parameters:
         - id: key
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
-        type: string | null
+        type: null | string
   - name: getItemCookie(string)
     uid: '@azure/msal-browser.BrowserCacheManager.getItemCookie'
     package: '@azure/msal-browser'
@@ -461,8 +442,7 @@ methods:
       parameters:
         - id: cookieName
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: string
@@ -476,7 +456,7 @@ methods:
       content: 'function getKeys(): string[]'
       return:
         description: ''
-        type: 'string[]'
+        type: string[]
   - name: getLegacyLoginHint()
     uid: '@azure/msal-browser.BrowserCacheManager.getLegacyLoginHint'
     package: '@azure/msal-browser'
@@ -484,10 +464,10 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getLegacyLoginHint(): string | null'
+      content: 'function getLegacyLoginHint(): null | string'
       return:
         description: ''
-        type: string | null
+        type: null | string
   - name: getRedirectRequestContext()
     uid: '@azure/msal-browser.BrowserCacheManager.getRedirectRequestContext'
     package: '@azure/msal-browser'
@@ -497,10 +477,10 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getRedirectRequestContext(): string | null'
+      content: 'function getRedirectRequestContext(): null | string'
       return:
         description: ''
-        type: string | null
+        type: null | string
   - name: getRefreshTokenCredential(string)
     uid: '@azure/msal-browser.BrowserCacheManager.getRefreshTokenCredential'
     package: '@azure/msal-browser'
@@ -508,17 +488,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function getRefreshTokenCredential(refreshTokenKey: string):
-        RefreshTokenEntity | null
+      content: 'function getRefreshTokenCredential(refreshTokenKey: string): any'
       parameters:
         - id: refreshTokenKey
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
-        type: RefreshTokenEntity | null
+        type: any
   - name: getServerTelemetry(string)
     uid: '@azure/msal-browser.BrowserCacheManager.getServerTelemetry'
     package: '@azure/msal-browser'
@@ -526,18 +503,15 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function getServerTelemetry(serverTelemetryKey: string):
-        ServerTelemetryEntity | null
+      content: 'function getServerTelemetry(serverTelemetryKey: string): any'
       parameters:
         - id: serverTelemetryKey
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
-        type: ServerTelemetryEntity | null
-  - name: 'getTemporaryCache(string, undefined | false | true)'
+        type: any
+  - name: getTemporaryCache(string, boolean)
     uid: '@azure/msal-browser.BrowserCacheManager.getTemporaryCache'
     package: '@azure/msal-browser'
     summary: |-
@@ -547,18 +521,18 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function getTemporaryCache(cacheKey: string, generateKey?: undefined |
-        false | true): string | null
+        function getTemporaryCache(cacheKey: string, generateKey?: boolean):
+        null | string
       parameters:
         - id: cacheKey
           type: string
           description: ''
         - id: generateKey
-          type: undefined | false | true
+          type: boolean
           description: ''
       return:
         description: ''
-        type: string | null
+        type: null | string
   - name: getThrottlingCache(string)
     uid: '@azure/msal-browser.BrowserCacheManager.getThrottlingCache'
     package: '@azure/msal-browser'
@@ -566,17 +540,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function getThrottlingCache(throttlingCacheKey: string):
-        ThrottlingEntity | null
+      content: 'function getThrottlingCache(throttlingCacheKey: string): any'
       parameters:
         - id: throttlingCacheKey
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
-        type: ThrottlingEntity | null
+        type: any
   - name: getWrapperMetadata()
     uid: '@azure/msal-browser.BrowserCacheManager.getWrapperMetadata'
     package: '@azure/msal-browser'
@@ -588,19 +559,17 @@ methods:
       return:
         description: ''
         type: '[string, string]'
-  - name: isInteractionInProgress(undefined | false | true)
+  - name: isInteractionInProgress(boolean)
     uid: '@azure/msal-browser.BrowserCacheManager.isInteractionInProgress'
     package: '@azure/msal-browser'
     summary: ''
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function isInteractionInProgress(matchClientId?: undefined | false |
-        true): boolean
+      content: 'function isInteractionInProgress(matchClientId?: boolean): boolean'
       parameters:
         - id: matchClientId
-          type: undefined | false | true
+          type: boolean
           description: ''
       return:
         description: ''
@@ -618,8 +587,7 @@ methods:
       parameters:
         - id: key
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: boolean
@@ -634,8 +602,7 @@ methods:
       parameters:
         - id: state
           type: string
-          description: |+
-
+          description: ''
   - name: setAccessTokenCredential(AccessTokenEntity)
     uid: '@azure/msal-browser.BrowserCacheManager.setAccessTokenCredential'
     package: '@azure/msal-browser'
@@ -647,8 +614,7 @@ methods:
       parameters:
         - id: accessToken
           type: AccessTokenEntity
-          description: |+
-
+          description: ''
   - name: setAccount(AccountEntity)
     uid: '@azure/msal-browser.BrowserCacheManager.setAccount'
     package: '@azure/msal-browser'
@@ -661,19 +627,18 @@ methods:
         - id: account
           type: AccountEntity
           description: ''
-  - name: setActiveAccount(AccountInfo | null)
+  - name: setActiveAccount(any)
     uid: '@azure/msal-browser.BrowserCacheManager.setActiveAccount'
     package: '@azure/msal-browser'
     summary: Sets the active account's localAccountId in cache
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function setActiveAccount(account: AccountInfo | null)'
+      content: 'function setActiveAccount(account: any)'
       parameters:
         - id: account
-          type: AccountInfo | null
-          description: |+
-
+          type: any
+          description: ''
   - name: setAppMetadata(AppMetadataEntity)
     uid: '@azure/msal-browser.BrowserCacheManager.setAppMetadata'
     package: '@azure/msal-browser'
@@ -685,9 +650,8 @@ methods:
       parameters:
         - id: appMetadata
           type: AppMetadataEntity
-          description: |+
-
-  - name: 'setAuthorityMetadata(string, AuthorityMetadataEntity)'
+          description: ''
+  - name: setAuthorityMetadata(string, AuthorityMetadataEntity)
     uid: '@azure/msal-browser.BrowserCacheManager.setAuthorityMetadata'
     package: '@azure/msal-browser'
     summary: ''
@@ -703,8 +667,7 @@ methods:
           description: ''
         - id: entity
           type: AuthorityMetadataEntity
-          description: |+
-
+          description: ''
   - name: setCache()
     uid: '@azure/msal-browser.BrowserCacheManager.setCache'
     package: '@azure/msal-browser'
@@ -726,8 +689,7 @@ methods:
       parameters:
         - id: idToken
           type: IdTokenEntity
-          description: |+
-
+          description: ''
   - name: setInteractionInProgress(boolean)
     uid: '@azure/msal-browser.BrowserCacheManager.setInteractionInProgress'
     package: '@azure/msal-browser'
@@ -740,7 +702,7 @@ methods:
         - id: inProgress
           type: boolean
           description: ''
-  - name: 'setItem(string, string)'
+  - name: setItem(string, string)
     uid: '@azure/msal-browser.BrowserCacheManager.setItem'
     package: '@azure/msal-browser'
     summary: sets the entry in the browser storage
@@ -754,9 +716,8 @@ methods:
           description: ''
         - id: value
           type: string
-          description: |+
-
-  - name: 'setItemCookie(string, string, undefined | number)'
+          description: ''
+  - name: setItemCookie(string, string, number)
     uid: '@azure/msal-browser.BrowserCacheManager.setItemCookie'
     package: '@azure/msal-browser'
     summary: Add value to cookies
@@ -765,7 +726,7 @@ methods:
     syntax:
       content: >-
         function setItemCookie(cookieName: string, cookieValue: string,
-        expires?: undefined | number)
+        expires?: number)
       parameters:
         - id: cookieName
           type: string
@@ -774,9 +735,8 @@ methods:
           type: string
           description: ''
         - id: expires
-          type: undefined | number
-          description: |+
-
+          type: number
+          description: ''
   - name: setRedirectRequestContext(string)
     uid: '@azure/msal-browser.BrowserCacheManager.setRedirectRequestContext'
     package: '@azure/msal-browser'
@@ -790,8 +750,7 @@ methods:
       parameters:
         - id: value
           type: string
-          description: |+
-
+          description: ''
   - name: setRefreshTokenCredential(RefreshTokenEntity)
     uid: '@azure/msal-browser.BrowserCacheManager.setRefreshTokenCredential'
     package: '@azure/msal-browser'
@@ -803,9 +762,8 @@ methods:
       parameters:
         - id: refreshToken
           type: RefreshTokenEntity
-          description: |+
-
-  - name: 'setServerTelemetry(string, ServerTelemetryEntity)'
+          description: ''
+  - name: setServerTelemetry(string, ServerTelemetryEntity)
     uid: '@azure/msal-browser.BrowserCacheManager.setServerTelemetry'
     package: '@azure/msal-browser'
     summary: set server telemetry entity to the platform cache
@@ -821,9 +779,8 @@ methods:
           description: ''
         - id: serverTelemetry
           type: ServerTelemetryEntity
-          description: |+
-
-  - name: 'setTemporaryCache(string, string, undefined | false | true)'
+          description: ''
+  - name: setTemporaryCache(string, string, boolean)
     uid: '@azure/msal-browser.BrowserCacheManager.setTemporaryCache'
     package: '@azure/msal-browser'
     summary: |-
@@ -835,19 +792,18 @@ methods:
     syntax:
       content: >-
         function setTemporaryCache(cacheKey: string, value: string,
-        generateKey?: undefined | false | true)
+        generateKey?: boolean)
       parameters:
         - id: cacheKey
           type: string
           description: ''
         - id: value
           type: string
-          description: |+
-
-        - id: generateKey
-          type: undefined | false | true
           description: ''
-  - name: 'setThrottlingCache(string, ThrottlingEntity)'
+        - id: generateKey
+          type: boolean
+          description: ''
+  - name: setThrottlingCache(string, ThrottlingEntity)
     uid: '@azure/msal-browser.BrowserCacheManager.setThrottlingCache'
     package: '@azure/msal-browser'
     summary: set throttling entity to the platform cache
@@ -863,9 +819,8 @@ methods:
           description: ''
         - id: throttlingCache
           type: ThrottlingEntity
-          description: |+
-
-  - name: 'setWrapperMetadata(string, string)'
+          description: ''
+  - name: setWrapperMetadata(string, string)
     uid: '@azure/msal-browser.BrowserCacheManager.setWrapperMetadata'
     package: '@azure/msal-browser'
     summary: Sets wrapper metadata in memory
@@ -879,19 +834,17 @@ methods:
           description: ''
         - id: wrapperVersion
           type: string
-          description: |+
-
-  - name: 'updateCacheEntries(string, string, string, string, AccountInfo | null)'
+          description: ''
+  - name: updateCacheEntries(string, string, string, string, any)
     uid: '@azure/msal-browser.BrowserCacheManager.updateCacheEntries'
     package: '@azure/msal-browser'
-    summary: 'Updates account, authority, and state in cache'
+    summary: Updates account, authority, and state in cache
     remarks: ''
     isDeprecated: false
     syntax:
       content: >-
         function updateCacheEntries(state: string, nonce: string,
-        authorityInstance: string, loginHint: string, account: AccountInfo |
-        null)
+        authorityInstance: string, loginHint: string, account: any)
       parameters:
         - id: state
           type: string
@@ -906,10 +859,9 @@ methods:
           type: string
           description: ''
         - id: account
-          type: AccountInfo | null
-          description: |+
-
-  - name: 'updateCredentialCacheKey(string, ValidCredentialType)'
+          type: any
+          description: ''
+  - name: updateCredentialCacheKey(string, ValidCredentialType)
     uid: '@azure/msal-browser.BrowserCacheManager.updateCredentialCacheKey'
     package: '@azure/msal-browser'
     summary: Updates a credential's cache key if the current cache key is outdated
@@ -929,4 +881,4 @@ methods:
       return:
         description: ''
         type: string
-extends: any
+extends: <xref uid="@azure/msal-browser.AuthenticationScheme" />

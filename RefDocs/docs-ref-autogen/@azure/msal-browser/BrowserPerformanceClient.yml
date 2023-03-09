@@ -45,9 +45,7 @@ constructors:
           type: <xref uid="@azure/msal-browser.CryptoOptions" />
           description: ''
 methods:
-  - name: >-
-      addQueueMeasurement(PerformanceEvents, undefined | string, undefined |
-      number, undefined | false | true)
+  - name: addQueueMeasurement(PerformanceEvents, string, number, boolean)
     uid: '@azure/msal-browser.BrowserPerformanceClient.addQueueMeasurement'
     package: '@azure/msal-browser'
     summary: Calculates and adds queue time measurement for given performance event.
@@ -56,20 +54,19 @@ methods:
     syntax:
       content: >-
         function addQueueMeasurement(eventName: PerformanceEvents,
-        correlationId?: undefined | string, queueTime?: undefined | number,
-        manuallyCompleted?: undefined | false | true)
+        correlationId?: string, queueTime?: number, manuallyCompleted?: boolean)
       parameters:
         - id: eventName
           type: PerformanceEvents
           description: ''
         - id: correlationId
-          type: undefined | string
+          type: string
           description: ''
         - id: queueTime
-          type: undefined | number
+          type: number
           description: ''
         - id: manuallyCompleted
-          type: undefined | false | true
+          type: boolean
           description: indicator for manually completed queue measurements
   - name: generateId()
     uid: '@azure/msal-browser.BrowserPerformanceClient.generateId'
@@ -82,7 +79,7 @@ methods:
       return:
         description: ''
         type: string
-  - name: 'setPreQueueTime(PerformanceEvents, undefined | string)'
+  - name: setPreQueueTime(PerformanceEvents, string)
     uid: '@azure/msal-browser.BrowserPerformanceClient.setPreQueueTime'
     package: '@azure/msal-browser'
     summary: Adds pre-queue time to preQueueTimeByCorrelationId map.
@@ -91,15 +88,15 @@ methods:
     syntax:
       content: >-
         function setPreQueueTime(eventName: PerformanceEvents, correlationId?:
-        undefined | string)
+        string)
       parameters:
         - id: eventName
           type: PerformanceEvents
           description: ''
         - id: correlationId
-          type: undefined | string
+          type: string
           description: ''
-  - name: 'startMeasurement(PerformanceEvents, undefined | string)'
+  - name: startMeasurement(PerformanceEvents, string)
     uid: '@azure/msal-browser.BrowserPerformanceClient.startMeasurement'
     package: '@azure/msal-browser'
     summary: >-
@@ -112,18 +109,18 @@ methods:
     syntax:
       content: >-
         function startMeasurement(measureName: PerformanceEvents,
-        correlationId?: undefined | string): InProgressPerformanceEvent
+        correlationId?: string): InProgressPerformanceEvent
       parameters:
         - id: measureName
           type: PerformanceEvents
           description: ''
         - id: correlationId
-          type: undefined | string
+          type: string
           description: ''
       return:
         description: ''
         type: InProgressPerformanceEvent
-  - name: 'startPerformanceMeasuremeant(string, string)'
+  - name: startPerformanceMeasuremeant(string, string)
     uid: '@azure/msal-browser.BrowserPerformanceClient.startPerformanceMeasuremeant'
     package: '@azure/msal-browser'
     summary: ''
@@ -154,4 +151,4 @@ methods:
       return:
         description: ''
         type: boolean
-extends: any
+extends: <xref uid="@azure/msal-browser.AuthenticationScheme" />

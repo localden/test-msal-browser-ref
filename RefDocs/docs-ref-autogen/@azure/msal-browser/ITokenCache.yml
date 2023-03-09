@@ -8,7 +8,7 @@ remarks: ''
 isDeprecated: false
 type: interface
 methods:
-  - name: 'loadExternalTokens(SilentRequest, ExternalTokenResponse, LoadTokenOptions)'
+  - name: loadExternalTokens(SilentRequest, ExternalTokenResponse, LoadTokenOptions)
     uid: '@azure/msal-browser.ITokenCache.loadExternalTokens'
     package: '@azure/msal-browser'
     summary: API to side-load tokens to MSAL cache

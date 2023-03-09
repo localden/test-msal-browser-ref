@@ -9,7 +9,7 @@ isDeprecated: false
 syntax: |
   type RedirectParams = InteractionParams & {
     navigationClient: INavigationClient,
-    onRedirectNavigate?: undefined | ((url: string) => void | boolean),
+    onRedirectNavigate?: (url: string) => void | boolean,
     redirectStartPage: string,
     redirectTimeout: number,
   }

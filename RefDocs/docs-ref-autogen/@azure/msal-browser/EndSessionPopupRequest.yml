@@ -34,7 +34,7 @@ syntax: |
   type EndSessionPopupRequest = Partial<
     Omit<CommonEndSessionRequest, "tokenQueryParameters">
   > & {
-    authority?: undefined | string,
-    mainWindowRedirectUri?: undefined | string,
+    authority?: string,
+    mainWindowRedirectUri?: string,
     popupWindowAttributes?: PopupWindowAttributes,
   }

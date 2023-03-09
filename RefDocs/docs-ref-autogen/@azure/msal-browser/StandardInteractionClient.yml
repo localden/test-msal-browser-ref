@@ -13,7 +13,7 @@ constructors:
   - name: >-
       StandardInteractionClient(BrowserConfiguration, BrowserCacheManager,
       ICrypto, Logger, EventHandler, INavigationClient, IPerformanceClient,
-      NativeMessageHandler, undefined | string)
+      NativeMessageHandler, string)
     uid: '@azure/msal-browser.StandardInteractionClient.constructor'
     package: '@azure/msal-browser'
     summary: ''
@@ -25,7 +25,7 @@ constructors:
         BrowserCacheManager, browserCrypto: ICrypto, logger: Logger,
         eventHandler: EventHandler, navigationClient: INavigationClient,
         performanceClient: IPerformanceClient, nativeMessageHandler?:
-        NativeMessageHandler, correlationId?: undefined | string)
+        NativeMessageHandler, correlationId?: string)
       parameters:
         - id: config
           type: <xref uid="@azure/msal-browser.BrowserConfiguration" />
@@ -52,10 +52,14 @@ constructors:
           type: <xref uid="@azure/msal-browser.NativeMessageHandler" />
           description: ''
         - id: correlationId
-          type: undefined | string
+          type: string
           description: ''
 inheritedMethods:
-  - name: acquireToken(RedirectRequest | PopupRequest | SsoSilentRequest)
+  - name: >-
+      acquireToken(RedirectRequest | PopupRequest |
+      Partial<Omit<CommonAuthorizationUrlRequest, "responseMode" |
+      "codeChallenge" | "codeChallengeMethod" | "requestedClaimsHash" |
+      "nativeBroker">>)
     uid: '@azure/msal-browser.StandardInteractionClient.acquireToken'
     package: '@azure/msal-browser'
     summary: ''
@@ -64,31 +68,35 @@ inheritedMethods:
     syntax:
       content: >-
         function acquireToken(request: RedirectRequest | PopupRequest |
-        SsoSilentRequest): Promise<AuthenticationResult | void>
+        Partial<Omit<CommonAuthorizationUrlRequest, "responseMode" |
+        "codeChallenge" | "codeChallengeMethod" | "requestedClaimsHash" |
+        "nativeBroker">>): Promise<any>
       parameters:
         - id: request
           type: >-
             <xref uid="@azure/msal-browser.RedirectRequest" /> | <xref
-            uid="@azure/msal-browser.PopupRequest" /> | <xref
-            uid="@azure/msal-browser.SsoSilentRequest" />
+            uid="@azure/msal-browser.PopupRequest" /> |
+            Partial&lt;Omit&lt;CommonAuthorizationUrlRequest, "responseMode" |
+            "codeChallenge" | "codeChallengeMethod" | "requestedClaimsHash" |
+            "nativeBroker"&gt;&gt;
           description: ''
       return:
         description: ''
-        type: Promise&lt;AuthenticationResult | void&gt;
+        type: Promise&lt;any&gt;
     inheritanceDescription: >-
       <b>Inherited From</b>
       [BaseInteractionClient.acquireToken](xref:@azure/msal-browser.BaseInteractionClient.acquireToken)
-  - name: getRedirectUri(undefined | string)
+  - name: getRedirectUri(string)
     uid: '@azure/msal-browser.StandardInteractionClient.getRedirectUri'
     package: '@azure/msal-browser'
     summary: Use to get the redirect uri configured in MSAL or null.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getRedirectUri(requestRedirectUri?: undefined | string): string'
+      content: 'function getRedirectUri(requestRedirectUri?: string): string'
       parameters:
         - id: requestRedirectUri
-          type: undefined | string
+          type: string
           description: ''
       return:
         description: Redirect URL

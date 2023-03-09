@@ -38,8 +38,7 @@ methods:
       parameters:
         - id: dataString
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: ArrayBuffer
@@ -54,8 +53,7 @@ methods:
       parameters:
         - id: sDOMStr
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Uint8Array
@@ -70,8 +68,7 @@ methods:
       parameters:
         - id: aBytes
           type: Uint8Array
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: string

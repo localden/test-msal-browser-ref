@@ -19,8 +19,7 @@ methods:
       parameters:
         - id: key
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: boolean
@@ -31,15 +30,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getItem(key: string): T | null'
+      content: 'function getItem(key: string): null | T'
       parameters:
         - id: key
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
-        type: T | null
+        type: null | T
   - name: getKeys()
     uid: '@azure/msal-browser.IWindowStorage.getKeys'
     package: '@azure/msal-browser'
@@ -52,7 +50,7 @@ methods:
       content: 'function getKeys(): string[]'
       return:
         description: ''
-        type: 'string[]'
+        type: string[]
   - name: removeItem(string)
     uid: '@azure/msal-browser.IWindowStorage.removeItem'
     package: '@azure/msal-browser'
@@ -64,9 +62,8 @@ methods:
       parameters:
         - id: key
           type: string
-          description: |+
-
-  - name: 'setItem(string, T)'
+          description: ''
+  - name: setItem(string, T)
     uid: '@azure/msal-browser.IWindowStorage.setItem'
     package: '@azure/msal-browser'
     summary: Sets the item in the window storage object with the given key.
@@ -80,5 +77,4 @@ methods:
           description: ''
         - id: value
           type: T
-          description: |+
-
+          description: ''

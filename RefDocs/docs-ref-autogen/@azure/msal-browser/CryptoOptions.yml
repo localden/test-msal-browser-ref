@@ -7,7 +7,4 @@ fullName: CryptoOptions
 remarks: ''
 isDeprecated: false
 syntax: |
-  type CryptoOptions = {
-    entropy?: Uint8Array,
-    useMsrCrypto?: undefined | false | true,
-  }
+  type CryptoOptions = { entropy?: Uint8Array, useMsrCrypto?: boolean }

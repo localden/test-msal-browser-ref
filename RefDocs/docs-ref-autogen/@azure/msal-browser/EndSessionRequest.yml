@@ -26,10 +26,8 @@ summary: >-
 fullName: EndSessionRequest
 remarks: ''
 isDeprecated: false
-syntax: |
+syntax: >
   type EndSessionRequest = Partial<
     Omit<CommonEndSessionRequest, "tokenQueryParameters">
-  > & {
-    authority?: undefined | string,
-    onRedirectNavigate?: undefined | ((url: string) => boolean | void),
+  > & { authority?: string, onRedirectNavigate?: (url: string) => boolean | void
   }

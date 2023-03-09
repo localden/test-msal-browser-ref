@@ -13,9 +13,9 @@ syntax: |
       "code" | "enableSpaAuthorizationCode" | "requestedClaimsHash"
     >
   > & {
-    cloudGraphHostName?: undefined | string,
-    cloudInstanceHostName?: undefined | string,
-    code?: undefined | string,
-    msGraphHost?: undefined | string,
-    nativeAccountId?: undefined | string,
+    cloudGraphHostName?: string,
+    cloudInstanceHostName?: string,
+    code?: string,
+    msGraphHost?: string,
+    nativeAccountId?: string,
   }

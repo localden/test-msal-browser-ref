@@ -2,7 +2,7 @@
 name: TemporaryCacheKeys
 uid: '@azure/msal-browser.TemporaryCacheKeys'
 package: '@azure/msal-browser'
-summary: 'Temporary cache keys for MSAL, deleted after any request.'
+summary: Temporary cache keys for MSAL, deleted after any request.
 fullName: TemporaryCacheKeys
 remarks: ''
 isDeprecated: false

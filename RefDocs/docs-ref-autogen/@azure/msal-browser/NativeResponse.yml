@@ -12,10 +12,10 @@ syntax: |
     account: NativeAccountInfo,
     client_info: string,
     expires_in: number,
-    extendedLifetimeToken?: undefined | false | true,
+    extendedLifetimeToken?: boolean,
     id_token: string,
     properties: NativeResponseProperties,
     scope: string,
-    shr?: undefined | string,
+    shr?: string,
     state: string,
   }

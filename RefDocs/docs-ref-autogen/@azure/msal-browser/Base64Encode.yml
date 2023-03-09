@@ -23,8 +23,7 @@ methods:
       parameters:
         - id: input
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: string
@@ -39,8 +38,7 @@ methods:
       parameters:
         - id: input
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: string
@@ -55,8 +53,7 @@ methods:
       parameters:
         - id: inputArr
           type: Uint8Array
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: string

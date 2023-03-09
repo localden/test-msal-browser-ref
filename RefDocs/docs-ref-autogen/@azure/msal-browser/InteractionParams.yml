@@ -7,4 +7,4 @@ fullName: InteractionParams
 remarks: ''
 isDeprecated: false
 syntax: |
-  type InteractionParams = Object
+  type InteractionParams = {}

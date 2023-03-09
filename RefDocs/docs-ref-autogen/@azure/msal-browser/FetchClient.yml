@@ -10,7 +10,7 @@ remarks: ''
 isDeprecated: false
 type: class
 methods:
-  - name: 'sendGetRequestAsync<T>(string, NetworkRequestOptions)'
+  - name: sendGetRequestAsync<T>(string, any)
     uid: '@azure/msal-browser.FetchClient.sendGetRequestAsync'
     package: '@azure/msal-browser'
     summary: Fetch Client for REST endpoints - Get request
@@ -18,19 +18,19 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function sendGetRequestAsync<T>(url: string, options?:
-        NetworkRequestOptions): Promise<NetworkResponse<T>>
+        function sendGetRequestAsync<T>(url: string, options?: any):
+        Promise<NetworkResponse<T>>
       parameters:
         - id: url
           type: string
           description: ''
         - id: options
-          type: NetworkRequestOptions
+          type: any
           description: ''
       return:
         description: ''
         type: Promise&lt;NetworkResponse&lt;T&gt;&gt;
-  - name: 'sendPostRequestAsync<T>(string, NetworkRequestOptions)'
+  - name: sendPostRequestAsync<T>(string, any)
     uid: '@azure/msal-browser.FetchClient.sendPostRequestAsync'
     package: '@azure/msal-browser'
     summary: Fetch Client for REST endpoints - Post request
@@ -38,14 +38,14 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function sendPostRequestAsync<T>(url: string, options?:
-        NetworkRequestOptions): Promise<NetworkResponse<T>>
+        function sendPostRequestAsync<T>(url: string, options?: any):
+        Promise<NetworkResponse<T>>
       parameters:
         - id: url
           type: string
           description: ''
         - id: options
-          type: NetworkRequestOptions
+          type: any
           description: ''
       return:
         description: ''

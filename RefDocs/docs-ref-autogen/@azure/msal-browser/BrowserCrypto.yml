@@ -13,7 +13,7 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: 'BrowserCrypto(Logger, CryptoOptions)'
+  - name: BrowserCrypto(Logger, CryptoOptions)
     uid: '@azure/msal-browser.BrowserCrypto.constructor'
     package: '@azure/msal-browser'
     summary: ''
@@ -44,7 +44,7 @@ methods:
       return:
         description: ''
         type: Promise&lt;JsonWebKey&gt;
-  - name: 'generateKeyPair(boolean, Array<KeyUsage>)'
+  - name: generateKeyPair(boolean, KeyUsage[])
     uid: '@azure/msal-browser.BrowserCrypto.generateKeyPair'
     package: '@azure/msal-browser'
     summary: Generates a keypair based on current keygen algorithm config.
@@ -52,16 +52,15 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function generateKeyPair(extractable: boolean, usages: Array<KeyUsage>):
+        function generateKeyPair(extractable: boolean, usages: KeyUsage[]):
         Promise<CryptoKeyPair>
       parameters:
         - id: extractable
           type: boolean
           description: ''
         - id: usages
-          type: Array&lt;KeyUsage&gt;
-          description: |+
-
+          type: KeyUsage[]
+          description: ''
       return:
         description: ''
         type: Promise&lt;CryptoKeyPair&gt;
@@ -76,21 +75,20 @@ methods:
       parameters:
         - id: dataBuffer
           type: Uint8Array
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Uint8Array
-  - name: 'importJwk(JsonWebKey, boolean, Array<KeyUsage>)'
+  - name: importJwk(JsonWebKey, boolean, KeyUsage[])
     uid: '@azure/msal-browser.BrowserCrypto.importJwk'
     package: '@azure/msal-browser'
-    summary: 'Imports key as Json Web Key (JWK), can set extractable and usages.'
+    summary: Imports key as Json Web Key (JWK), can set extractable and usages.
     remarks: ''
     isDeprecated: false
     syntax:
       content: >-
         function importJwk(key: JsonWebKey, extractable: boolean, usages:
-        Array<KeyUsage>): Promise<CryptoKey>
+        KeyUsage[]): Promise<CryptoKey>
       parameters:
         - id: key
           type: JsonWebKey
@@ -99,9 +97,8 @@ methods:
           type: boolean
           description: ''
         - id: usages
-          type: Array&lt;KeyUsage&gt;
-          description: |+
-
+          type: KeyUsage[]
+          description: ''
       return:
         description: ''
         type: Promise&lt;CryptoKey&gt;
@@ -116,12 +113,11 @@ methods:
       parameters:
         - id: dataString
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;ArrayBuffer&gt;
-  - name: 'sign(CryptoKey, ArrayBuffer)'
+  - name: sign(CryptoKey, ArrayBuffer)
     uid: '@azure/msal-browser.BrowserCrypto.sign'
     package: '@azure/msal-browser'
     summary: Signs given data with given key
@@ -135,8 +131,7 @@ methods:
           description: ''
         - id: data
           type: ArrayBuffer
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;ArrayBuffer&gt;

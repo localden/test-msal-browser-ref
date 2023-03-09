@@ -3,7 +3,7 @@ name: ApiId
 uid: '@azure/msal-browser.ApiId'
 package: '@azure/msal-browser'
 summary: >-
-  API Codes for Telemetry purposes.
+  API Codes for Telemetry purposes. 
 
   Before adding a new code you must claim it in the MSAL Telemetry tracker as
   these number spaces are shared across all MSALs

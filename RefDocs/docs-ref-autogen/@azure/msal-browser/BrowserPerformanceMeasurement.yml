@@ -8,7 +8,7 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: 'BrowserPerformanceMeasurement(string, string)'
+  - name: BrowserPerformanceMeasurement(string, string)
     uid: '@azure/msal-browser.BrowserPerformanceMeasurement.constructor'
     package: '@azure/msal-browser'
     summary: ''
@@ -39,11 +39,11 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function flushMeasurement(): number | null'
+      content: 'function flushMeasurement(): null | number'
       return:
         description: ''
-        type: number | null
-  - name: 'flushMeasurements(string, SubMeasurement[])'
+        type: null | number
+  - name: flushMeasurements(string, SubMeasurement[])
     uid: '@azure/msal-browser.BrowserPerformanceMeasurement.flushMeasurements'
     package: '@azure/msal-browser'
     summary: Flush browser marks and measurements.
@@ -58,9 +58,8 @@ methods:
           type: string
           description: ''
         - id: measurements
-          type: 'SubMeasurement[]'
-          description: |+
-
+          type: SubMeasurement[]
+          description: ''
   - name: startMeasurement()
     uid: '@azure/msal-browser.BrowserPerformanceMeasurement.startMeasurement'
     package: '@azure/msal-browser'

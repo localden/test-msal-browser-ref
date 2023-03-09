@@ -2,9 +2,10 @@
 name: SsoSilentRequest
 uid: '@azure/msal-browser.SsoSilentRequest'
 package: '@azure/msal-browser'
-summary: >
+summary: >-
   Request object passed by user to ssoSilent to retrieve a Code from the server
   (first leg of authorization code grant flow)
+
 
   - scopes                     - Array of scopes the application is requesting
   access to (optional for ssoSilent calls)

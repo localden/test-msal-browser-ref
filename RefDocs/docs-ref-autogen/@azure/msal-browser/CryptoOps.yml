@@ -4,7 +4,7 @@ uid: '@azure/msal-browser.CryptoOps'
 package: '@azure/msal-browser'
 summary: >-
   This class implements MSAL's crypto interface, which allows it to perform
-  base64 encoding and decoding, generating cryptographically random GUIDs and
+  base64 encoding and decoding, generating cryptographically random GUIDs and 
 
   implementing Proof Key for Code Exchange specs for the OAuth Authorization
   Code Flow using PKCE (rfc here: https://tools.ietf.org/html/rfc7636).
@@ -13,7 +13,7 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: 'CryptoOps(Logger, IPerformanceClient, CryptoOptions)'
+  - name: CryptoOps(Logger, any, CryptoOptions)
     uid: '@azure/msal-browser.CryptoOps.constructor'
     package: '@azure/msal-browser'
     summary: ''
@@ -21,14 +21,14 @@ constructors:
     isDeprecated: false
     syntax:
       content: >-
-        new CryptoOps(logger: Logger, performanceClient?: IPerformanceClient,
-        cryptoConfig?: CryptoOptions)
+        new CryptoOps(logger: Logger, performanceClient?: any, cryptoConfig?:
+        CryptoOptions)
       parameters:
         - id: logger
           type: Logger
           description: ''
         - id: performanceClient
-          type: IPerformanceClient
+          type: any
           description: ''
         - id: cryptoConfig
           type: <xref uid="@azure/msal-browser.CryptoOptions" />
@@ -45,8 +45,7 @@ methods:
       parameters:
         - id: input
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: string
@@ -61,8 +60,7 @@ methods:
       parameters:
         - id: input
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: string
@@ -102,7 +100,7 @@ methods:
   - name: getPublicKeyThumbprint(SignedHttpRequestParameters)
     uid: '@azure/msal-browser.CryptoOps.getPublicKeyThumbprint'
     package: '@azure/msal-browser'
-    summary: 'Generates a keypair, stores it and returns a thumbprint'
+    summary: Generates a keypair, stores it and returns a thumbprint
     remarks: ''
     isDeprecated: false
     syntax:
@@ -112,8 +110,7 @@ methods:
       parameters:
         - id: request
           type: SignedHttpRequestParameters
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;string&gt;
@@ -128,8 +125,7 @@ methods:
       parameters:
         - id: plainText
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;string&gt;
@@ -144,12 +140,11 @@ methods:
       parameters:
         - id: kid
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;boolean&gt;
-  - name: 'signJwt(SignedHttpRequest, string, undefined | string)'
+  - name: signJwt(SignedHttpRequest, string, string)
     uid: '@azure/msal-browser.CryptoOps.signJwt'
     package: '@azure/msal-browser'
     summary: >-
@@ -160,17 +155,16 @@ methods:
     syntax:
       content: >-
         function signJwt(payload: SignedHttpRequest, kid: string,
-        correlationId?: undefined | string): Promise<string>
+        correlationId?: string): Promise<string>
       parameters:
         - id: payload
-          type: <xref uid="@azure/msal-browser.SignedHttpRequest" />
+          type: SignedHttpRequest
           description: ''
         - id: kid
           type: string
-          description: |+
-
+          description: ''
         - id: correlationId
-          type: undefined | string
+          type: string
           description: ''
       return:
         description: ''

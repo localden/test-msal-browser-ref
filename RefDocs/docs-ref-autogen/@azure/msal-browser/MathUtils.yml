@@ -19,8 +19,7 @@ methods:
       parameters:
         - id: num
           type: number
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: string

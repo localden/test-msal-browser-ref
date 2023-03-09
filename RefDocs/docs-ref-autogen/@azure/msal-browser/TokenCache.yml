@@ -8,7 +8,7 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: 'TokenCache(BrowserConfiguration, BrowserCacheManager, Logger, ICrypto)'
+  - name: TokenCache(BrowserConfiguration, BrowserCacheManager, Logger, ICrypto)
     uid: '@azure/msal-browser.TokenCache.constructor'
     package: '@azure/msal-browser'
     summary: ''
@@ -45,7 +45,7 @@ properties:
         description: ''
         type: boolean
 methods:
-  - name: 'loadExternalTokens(SilentRequest, ExternalTokenResponse, LoadTokenOptions)'
+  - name: loadExternalTokens(SilentRequest, ExternalTokenResponse, LoadTokenOptions)
     uid: '@azure/msal-browser.TokenCache.loadExternalTokens'
     package: '@azure/msal-browser'
     summary: API to load tokens to msal-browser cache.

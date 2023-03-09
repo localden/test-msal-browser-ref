@@ -8,22 +8,20 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: 'BrowserAuthError(string, undefined | string)'
+  - name: BrowserAuthError(string, string)
     uid: '@azure/msal-browser.BrowserAuthError.constructor'
     package: '@azure/msal-browser'
     summary: ''
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        new BrowserAuthError(errorCode: string, errorMessage?: undefined |
-        string)
+      content: 'new BrowserAuthError(errorCode: string, errorMessage?: string)'
       parameters:
         - id: errorCode
           type: string
           description: ''
         - id: errorMessage
-          type: undefined | string
+          type: string
           description: ''
 methods:
   - name: createAuthCodeOrNativeAccountIdRequiredError()
@@ -101,8 +99,7 @@ methods:
       parameters:
         - id: errDetail
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: <xref uid="@azure/msal-browser.BrowserAuthError" />
@@ -141,8 +138,7 @@ methods:
       parameters:
         - id: hashValue
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: <xref uid="@azure/msal-browser.BrowserAuthError" />
@@ -186,7 +182,7 @@ methods:
       return:
         description: ''
         type: <xref uid="@azure/msal-browser.BrowserAuthError" />
-  - name: 'createGetRequestFailedError(string, string)'
+  - name: createGetRequestFailedError(string, string)
     uid: '@azure/msal-browser.BrowserAuthError.createGetRequestFailedError'
     package: '@azure/msal-browser'
     summary: >-
@@ -250,8 +246,7 @@ methods:
       parameters:
         - id: method
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: <xref uid="@azure/msal-browser.BrowserAuthError" />
@@ -467,12 +462,11 @@ methods:
       parameters:
         - id: errDetail
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: <xref uid="@azure/msal-browser.BrowserAuthError" />
-  - name: createPopupWindowError(undefined | string)
+  - name: createPopupWindowError(string)
     uid: '@azure/msal-browser.BrowserAuthError.createPopupWindowError'
     package: '@azure/msal-browser'
     summary: Creates an error thrown when the popup window could not be opened.
@@ -480,17 +474,16 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        static function createPopupWindowError(errDetail?: undefined | string):
+        static function createPopupWindowError(errDetail?: string):
         BrowserAuthError
       parameters:
         - id: errDetail
-          type: undefined | string
-          description: |+
-
+          type: string
+          description: ''
       return:
         description: ''
         type: <xref uid="@azure/msal-browser.BrowserAuthError" />
-  - name: 'createPostRequestFailedError(string, string)'
+  - name: createPostRequestFailedError(string, string)
     uid: '@azure/msal-browser.BrowserAuthError.createPostRequestFailedError'
     package: '@azure/msal-browser'
     summary: >-
@@ -527,8 +520,7 @@ methods:
       parameters:
         - id: windowParentCheck
           type: boolean
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: <xref uid="@azure/msal-browser.BrowserAuthError" />
@@ -671,4 +663,4 @@ methods:
       return:
         description: ''
         type: <xref uid="@azure/msal-browser.BrowserAuthError" />
-extends: any
+extends: <xref uid="@azure/msal-browser.AuthenticationScheme" />

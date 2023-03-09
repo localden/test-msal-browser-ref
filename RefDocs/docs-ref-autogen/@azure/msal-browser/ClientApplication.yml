@@ -19,13 +19,12 @@ constructors:
       parameters:
         - id: configuration
           type: <xref uid="@azure/msal-browser.Configuration" />
-          description: |
-            Object for the MSAL PublicClientApplication instance
+          description: Object for the MSAL PublicClientApplication instance
 methods:
   - name: acquireTokenByCode(AuthorizationCodeRequest)
     uid: '@azure/msal-browser.ClientApplication.acquireTokenByCode'
     package: '@azure/msal-browser'
-    summary: >
+    summary: >-
       This function redeems an authorization code (passed as code) from the eSTS
       token endpoint.
 
@@ -34,6 +33,7 @@ methods:
 
       This API is not indended for normal authorization code acquisition and
       redemption.
+
 
       Redemption of this authorization code will not require PKCE, as it was
       acquired by a confidential client.
@@ -46,7 +46,7 @@ methods:
       parameters:
         - id: request
           type: <xref uid="@azure/msal-browser.AuthorizationCodeRequest" />
-          description: ''
+          description: <xref:@azure/msal-browser.AuthorizationCodeRequest>
       return:
         description: >-
           A promise that is fulfilled when this function has completed, or
@@ -67,8 +67,7 @@ methods:
       parameters:
         - id: request
           type: <xref uid="@azure/msal-browser.PopupRequest" />
-          description: |+
-
+          description: ''
       return:
         description: >-
           A promise that is fulfilled when this function has completed, or
@@ -77,12 +76,13 @@ methods:
   - name: acquireTokenRedirect(RedirectRequest)
     uid: '@azure/msal-browser.ClientApplication.acquireTokenRedirect'
     package: '@azure/msal-browser'
-    summary: >
+    summary: >-
       Use when you want to obtain an access_token for your API by redirecting
       the user's browser window to the authorization endpoint. This function
       redirects
 
       the page, so any code that follows this function will not execute.
+
 
       IMPORTANT: It is NOT recommended to have code that is dependent on the
       resolution of the Promise. This function will navigate away from the
@@ -97,8 +97,7 @@ methods:
       parameters:
         - id: request
           type: <xref uid="@azure/msal-browser.RedirectRequest" />
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;void&gt;
@@ -110,16 +109,15 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function addEventCallback(callback: EventCallbackFunction): string |
-        null
+        function addEventCallback(callback: EventCallbackFunction): null |
+        string
       parameters:
         - id: callback
           type: <xref uid="@azure/msal-browser.EventCallbackFunction" />
-          description: |+
-
+          description: ''
       return:
         description: ''
-        type: string | null
+        type: null | string
   - name: addPerformanceCallback(PerformanceCallbackFunction)
     uid: '@azure/msal-browser.ClientApplication.addPerformanceCallback'
     package: '@azure/msal-browser'
@@ -167,14 +165,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getAccountByHomeId(homeAccountId: string): AccountInfo | null'
+      content: 'function getAccountByHomeId(homeAccountId: string): any'
       parameters:
         - id: homeAccountId
           type: string
           description: ''
       return:
         description: The account object stored in MSAL
-        type: AccountInfo | null
+        type: any
   - name: getAccountByLocalId(string)
     uid: '@azure/msal-browser.ClientApplication.getAccountByLocalId'
     package: '@azure/msal-browser'
@@ -185,14 +183,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getAccountByLocalId(localAccountId: string): AccountInfo | null'
+      content: 'function getAccountByLocalId(localAccountId: string): any'
       parameters:
         - id: localAccountId
           type: string
           description: ''
       return:
         description: The account object stored in MSAL
-        type: AccountInfo | null
+        type: any
   - name: getAccountByUsername(string)
     uid: '@azure/msal-browser.ClientApplication.getAccountByUsername'
     package: '@azure/msal-browser'
@@ -208,14 +206,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getAccountByUsername(userName: string): AccountInfo | null'
+      content: 'function getAccountByUsername(userName: string): any'
       parameters:
         - id: userName
           type: string
           description: ''
       return:
         description: The account object stored in MSAL
-        type: AccountInfo | null
+        type: any
   - name: getActiveAccount()
     uid: '@azure/msal-browser.ClientApplication.getActiveAccount'
     package: '@azure/msal-browser'
@@ -223,10 +221,10 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getActiveAccount(): AccountInfo | null'
+      content: 'function getActiveAccount(): any'
       return:
         description: ''
-        type: AccountInfo | null
+        type: any
   - name: getAllAccounts()
     uid: '@azure/msal-browser.ClientApplication.getAllAccounts'
     package: '@azure/msal-browser'
@@ -240,7 +238,7 @@ methods:
       content: 'function getAllAccounts(): AccountInfo[]'
       return:
         description: Array of account objects in cache
-        type: 'AccountInfo[]'
+        type: AccountInfo[]
   - name: getConfiguration()
     uid: '@azure/msal-browser.ClientApplication.getConfiguration'
     package: '@azure/msal-browser'
@@ -274,7 +272,7 @@ methods:
       return:
         description: ''
         type: <xref uid="@azure/msal-browser.ITokenCache" />
-  - name: handleRedirectPromise(undefined | string)
+  - name: handleRedirectPromise(string)
     uid: '@azure/msal-browser.ClientApplication.handleRedirectPromise'
     package: '@azure/msal-browser'
     summary: >-
@@ -288,12 +286,10 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function handleRedirectPromise(hash?: undefined | string):
-        Promise<AuthenticationResult | null>
+      content: 'function handleRedirectPromise(hash?: string): Promise<any>'
       parameters:
         - id: hash
-          type: undefined | string
+          type: string
           description: >-
             Hash to process. Defaults to the current value of
             window.location.hash. Only needs to be provided explicitly if the
@@ -302,7 +298,7 @@ methods:
         description: >-
           Token response or null. If the return value is null, then no auth
           redirect was detected.
-        type: Promise&lt;AuthenticationResult | null&gt;
+        type: Promise&lt;any&gt;
   - name: initialize()
     uid: '@azure/msal-browser.ClientApplication.initialize'
     package: '@azure/msal-browser'
@@ -316,7 +312,7 @@ methods:
       return:
         description: ''
         type: Promise&lt;void&gt;
-  - name: 'initializeWrapperLibrary(WrapperSKU, string)'
+  - name: initializeWrapperLibrary(WrapperSKU, string)
     uid: '@azure/msal-browser.ClientApplication.initializeWrapperLibrary'
     package: '@azure/msal-browser'
     summary: >-
@@ -332,8 +328,7 @@ methods:
           description: ''
         - id: version
           type: string
-          description: |+
-
+          description: ''
   - name: logout(EndSessionRequest)
     uid: '@azure/msal-browser.ClientApplication.logout'
     package: '@azure/msal-browser'
@@ -365,8 +360,7 @@ methods:
       parameters:
         - id: logoutRequest
           type: <xref uid="@azure/msal-browser.EndSessionPopupRequest" />
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;void&gt;
@@ -387,8 +381,7 @@ methods:
       parameters:
         - id: logoutRequest
           type: <xref uid="@azure/msal-browser.EndSessionRequest" />
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;void&gt;
@@ -403,8 +396,7 @@ methods:
       parameters:
         - id: callbackId
           type: string
-          description: |+
-
+          description: ''
   - name: removePerformanceCallback(string)
     uid: '@azure/msal-browser.ClientApplication.removePerformanceCallback'
     package: '@azure/msal-browser'
@@ -420,7 +412,7 @@ methods:
       return:
         description: ''
         type: boolean
-  - name: setActiveAccount(AccountInfo | null)
+  - name: setActiveAccount(any)
     uid: '@azure/msal-browser.ClientApplication.setActiveAccount'
     package: '@azure/msal-browser'
     summary: >-
@@ -429,12 +421,11 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function setActiveAccount(account: AccountInfo | null)'
+      content: 'function setActiveAccount(account: any)'
       parameters:
         - id: account
-          type: AccountInfo | null
-          description: |+
-
+          type: any
+          description: ''
   - name: setLogger(Logger)
     uid: '@azure/msal-browser.ClientApplication.setLogger'
     package: '@azure/msal-browser'
@@ -448,8 +439,7 @@ methods:
       parameters:
         - id: logger
           type: Logger
-          description: |
-            Logger instance
+          description: Logger instance
   - name: setNavigationClient(INavigationClient)
     uid: '@azure/msal-browser.ClientApplication.setNavigationClient'
     package: '@azure/msal-browser'
@@ -461,9 +451,11 @@ methods:
       parameters:
         - id: navigationClient
           type: <xref uid="@azure/msal-browser.INavigationClient" />
-          description: |+
-
-  - name: ssoSilent(SsoSilentRequest)
+          description: ''
+  - name: >-
+      ssoSilent(Partial<Omit<CommonAuthorizationUrlRequest, "responseMode" |
+      "codeChallenge" | "codeChallengeMethod" | "requestedClaimsHash" |
+      "nativeBroker">>)
     uid: '@azure/msal-browser.ClientApplication.ssoSilent'
     package: '@azure/msal-browser'
     summary: >-
@@ -473,6 +465,7 @@ methods:
       - Any browser using a form of Intelligent Tracking Prevention
 
       - If there is not an established session with the service
+
 
       In these cases, the request must be done inside a popup or full frame
       redirect.
@@ -490,13 +483,16 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function ssoSilent(request: SsoSilentRequest):
-        Promise<AuthenticationResult>
+        function ssoSilent(request: Partial<Omit<CommonAuthorizationUrlRequest,
+        "responseMode" | "codeChallenge" | "codeChallengeMethod" |
+        "requestedClaimsHash" | "nativeBroker">>): Promise<AuthenticationResult>
       parameters:
         - id: request
-          type: <xref uid="@azure/msal-browser.SsoSilentRequest" />
-          description: |+
-
+          type: >-
+            Partial&lt;Omit&lt;CommonAuthorizationUrlRequest, "responseMode" |
+            "codeChallenge" | "codeChallengeMethod" | "requestedClaimsHash" |
+            "nativeBroker"&gt;&gt;
+          description: <xref:@azure/msal-browser.SsoSilentRequest>
       return:
         description: >-
           A promise that is fulfilled when this function has completed, or

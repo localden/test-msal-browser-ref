@@ -8,16 +8,16 @@ remarks: ''
 isDeprecated: false
 syntax: |
   type BrowserAuthOptions = {
-    authority?: undefined | string,
-    authorityMetadata?: undefined | string,
+    authority?: string,
+    authorityMetadata?: string,
     azureCloudOptions?: AzureCloudOptions,
-    clientCapabilities?: Array<string>,
+    clientCapabilities?: string[],
     clientId: string,
-    cloudDiscoveryMetadata?: undefined | string,
-    knownAuthorities?: Array<string>,
-    navigateToLoginRequestUrl?: undefined | false | true,
+    cloudDiscoveryMetadata?: string,
+    knownAuthorities?: string[],
+    navigateToLoginRequestUrl?: boolean,
     postLogoutRedirectUri?: string | null,
     protocolMode?: ProtocolMode,
-    redirectUri?: undefined | string,
-    skipAuthorityMetadataCache?: undefined | false | true,
+    redirectUri?: string,
+    skipAuthorityMetadataCache?: boolean,
   }

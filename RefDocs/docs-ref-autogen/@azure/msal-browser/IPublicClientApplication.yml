@@ -81,14 +81,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function addEventCallback(callback: Function): string | null'
+      content: 'function addEventCallback(callback: Function): null | string'
       parameters:
         - id: callback
           type: Function
           description: ''
       return:
         description: ''
-        type: string | null
+        type: null | string
   - name: addPerformanceCallback(PerformanceCallbackFunction)
     uid: '@azure/msal-browser.IPublicClientApplication.addPerformanceCallback'
     package: '@azure/msal-browser'
@@ -129,14 +129,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getAccountByHomeId(homeAccountId: string): AccountInfo | null'
+      content: 'function getAccountByHomeId(homeAccountId: string): any'
       parameters:
         - id: homeAccountId
           type: string
           description: ''
       return:
         description: ''
-        type: AccountInfo | null
+        type: any
   - name: getAccountByLocalId(string)
     uid: '@azure/msal-browser.IPublicClientApplication.getAccountByLocalId'
     package: '@azure/msal-browser'
@@ -144,14 +144,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getAccountByLocalId(localId: string): AccountInfo | null'
+      content: 'function getAccountByLocalId(localId: string): any'
       parameters:
         - id: localId
           type: string
           description: ''
       return:
         description: ''
-        type: AccountInfo | null
+        type: any
   - name: getAccountByUsername(string)
     uid: '@azure/msal-browser.IPublicClientApplication.getAccountByUsername'
     package: '@azure/msal-browser'
@@ -159,14 +159,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getAccountByUsername(userName: string): AccountInfo | null'
+      content: 'function getAccountByUsername(userName: string): any'
       parameters:
         - id: userName
           type: string
           description: ''
       return:
         description: ''
-        type: AccountInfo | null
+        type: any
   - name: getActiveAccount()
     uid: '@azure/msal-browser.IPublicClientApplication.getActiveAccount'
     package: '@azure/msal-browser'
@@ -174,10 +174,10 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getActiveAccount(): AccountInfo | null'
+      content: 'function getActiveAccount(): any'
       return:
         description: ''
-        type: AccountInfo | null
+        type: any
   - name: getAllAccounts()
     uid: '@azure/msal-browser.IPublicClientApplication.getAllAccounts'
     package: '@azure/msal-browser'
@@ -188,7 +188,7 @@ methods:
       content: 'function getAllAccounts(): AccountInfo[]'
       return:
         description: ''
-        type: 'AccountInfo[]'
+        type: AccountInfo[]
   - name: getConfiguration()
     uid: '@azure/msal-browser.IPublicClientApplication.getConfiguration'
     package: '@azure/msal-browser'
@@ -222,23 +222,21 @@ methods:
       return:
         description: ''
         type: <xref uid="@azure/msal-browser.ITokenCache" />
-  - name: handleRedirectPromise(undefined | string)
+  - name: handleRedirectPromise(string)
     uid: '@azure/msal-browser.IPublicClientApplication.handleRedirectPromise'
     package: '@azure/msal-browser'
     summary: ''
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function handleRedirectPromise(hash?: undefined | string):
-        Promise<AuthenticationResult | null>
+      content: 'function handleRedirectPromise(hash?: string): Promise<any>'
       parameters:
         - id: hash
-          type: undefined | string
+          type: string
           description: ''
       return:
         description: ''
-        type: Promise&lt;AuthenticationResult | null&gt;
+        type: Promise&lt;any&gt;
   - name: initialize()
     uid: '@azure/msal-browser.IPublicClientApplication.initialize'
     package: '@azure/msal-browser'
@@ -250,7 +248,7 @@ methods:
       return:
         description: ''
         type: Promise&lt;void&gt;
-  - name: 'initializeWrapperLibrary(WrapperSKU, string)'
+  - name: initializeWrapperLibrary(WrapperSKU, string)
     uid: '@azure/msal-browser.IPublicClientApplication.initializeWrapperLibrary'
     package: '@azure/msal-browser'
     summary: ''
@@ -373,17 +371,17 @@ methods:
       return:
         description: ''
         type: boolean
-  - name: setActiveAccount(AccountInfo | null)
+  - name: setActiveAccount(any)
     uid: '@azure/msal-browser.IPublicClientApplication.setActiveAccount'
     package: '@azure/msal-browser'
     summary: ''
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function setActiveAccount(account: AccountInfo | null)'
+      content: 'function setActiveAccount(account: any)'
       parameters:
         - id: account
-          type: AccountInfo | null
+          type: any
           description: ''
   - name: setLogger(Logger)
     uid: '@azure/msal-browser.IPublicClientApplication.setLogger'
@@ -409,7 +407,10 @@ methods:
         - id: navigationClient
           type: <xref uid="@azure/msal-browser.INavigationClient" />
           description: ''
-  - name: ssoSilent(SsoSilentRequest)
+  - name: >-
+      ssoSilent(Partial<Omit<CommonAuthorizationUrlRequest, "responseMode" |
+      "codeChallenge" | "codeChallengeMethod" | "requestedClaimsHash" |
+      "nativeBroker">>)
     uid: '@azure/msal-browser.IPublicClientApplication.ssoSilent'
     package: '@azure/msal-browser'
     summary: ''
@@ -417,11 +418,15 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function ssoSilent(request: SsoSilentRequest):
-        Promise<AuthenticationResult>
+        function ssoSilent(request: Partial<Omit<CommonAuthorizationUrlRequest,
+        "responseMode" | "codeChallenge" | "codeChallengeMethod" |
+        "requestedClaimsHash" | "nativeBroker">>): Promise<AuthenticationResult>
       parameters:
         - id: request
-          type: <xref uid="@azure/msal-browser.SsoSilentRequest" />
+          type: >-
+            Partial&lt;Omit&lt;CommonAuthorizationUrlRequest, "responseMode" |
+            "codeChallenge" | "codeChallengeMethod" | "requestedClaimsHash" |
+            "nativeBroker"&gt;&gt;
           description: ''
       return:
         description: ''

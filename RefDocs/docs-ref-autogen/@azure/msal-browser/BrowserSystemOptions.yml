@@ -8,18 +8,18 @@ remarks: ''
 isDeprecated: false
 syntax: |
   type BrowserSystemOptions = SystemOptions & {
-    allowNativeBroker?: undefined | false | true,
-    allowRedirectInIframe?: undefined | false | true,
-    asyncPopups?: undefined | false | true,
+    allowNativeBroker?: boolean,
+    allowRedirectInIframe?: boolean,
+    asyncPopups?: boolean,
     cryptoOptions?: CryptoOptions,
-    iframeHashTimeout?: undefined | number,
-    loadFrameTimeout?: undefined | number,
+    iframeHashTimeout?: number,
+    loadFrameTimeout?: number,
     loggerOptions?: LoggerOptions,
-    nativeBrokerHandshakeTimeout?: undefined | number,
-    navigateFrameWait?: undefined | number,
+    nativeBrokerHandshakeTimeout?: number,
+    navigateFrameWait?: number,
     navigationClient?: INavigationClient,
     networkClient?: INetworkModule,
-    pollIntervalMilliseconds?: undefined | number,
-    redirectNavigationTimeout?: undefined | number,
-    windowHashTimeout?: undefined | number,
+    pollIntervalMilliseconds?: number,
+    redirectNavigationTimeout?: number,
+    windowHashTimeout?: number,
   }

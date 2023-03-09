@@ -8,7 +8,7 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: 'SignedHttpRequest(SignedHttpRequestParameters, SignedHttpRequestOptions)'
+  - name: SignedHttpRequest(SignedHttpRequestParameters, SignedHttpRequestOptions)
     uid: '@azure/msal-browser.SignedHttpRequest.constructor'
     package: '@azure/msal-browser'
     summary: ''
@@ -35,7 +35,7 @@ methods:
     syntax:
       content: 'function generatePublicKeyThumbprint(): Promise<string>'
       return:
-        description: 'Public key digest, which should be sent to the token issuer.'
+        description: Public key digest, which should be sent to the token issuer.
         type: Promise&lt;string&gt;
   - name: removeKeys(string)
     uid: '@azure/msal-browser.SignedHttpRequest.removeKeys'
@@ -52,7 +52,7 @@ methods:
       return:
         description: If keys are properly deleted
         type: Promise&lt;boolean&gt;
-  - name: 'signRequest(string, string, undefined | object)'
+  - name: signRequest(string, string, object)
     uid: '@azure/msal-browser.SignedHttpRequest.signRequest'
     package: '@azure/msal-browser'
     summary: Generates a signed http request for the given payload with the given key.
@@ -61,7 +61,7 @@ methods:
     syntax:
       content: >-
         function signRequest(payload: string, publicKeyThumbprint: string,
-        claims?: undefined | object): Promise<string>
+        claims?: object): Promise<string>
       parameters:
         - id: payload
           type: string
@@ -70,7 +70,7 @@ methods:
           type: string
           description: Public key digest (from generatePublicKeyThumbprint API)
         - id: claims
-          type: undefined | object
+          type: object
           description: Additional claims to include/override in the signed JWT
       return:
         description: Pop token signed with the corresponding private key

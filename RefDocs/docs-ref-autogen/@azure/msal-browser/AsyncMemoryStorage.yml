@@ -13,7 +13,7 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: 'AsyncMemoryStorage(Logger, string)'
+  - name: AsyncMemoryStorage<T>(Logger, string)
     uid: '@azure/msal-browser.AsyncMemoryStorage.constructor'
     package: '@azure/msal-browser'
     summary: ''
@@ -59,8 +59,7 @@ methods:
       parameters:
         - id: key
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;boolean&gt;
@@ -75,21 +74,20 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getItem(key: string): Promise<T | null>'
+      content: 'function getItem(key: string): Promise<null | T>'
       parameters:
         - id: key
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
-        type: Promise&lt;T | null&gt;
+        type: Promise&lt;null | T&gt;
   - name: getKeys()
     uid: '@azure/msal-browser.AsyncMemoryStorage.getKeys'
     package: '@azure/msal-browser'
     summary: >-
       Get all the keys from the in-memory cache as an iterable array of strings.
-      If no keys are found, query the keys in the
+      If no keys are found, query the keys in the 
 
       asynchronous storage object.
     remarks: ''
@@ -98,7 +96,7 @@ methods:
       content: 'function getKeys(): Promise<string[]>'
       return:
         description: ''
-        type: 'Promise&lt;string[]&gt;'
+        type: Promise&lt;string[]&gt;
   - name: removeItem(string)
     uid: '@azure/msal-browser.AsyncMemoryStorage.removeItem'
     package: '@azure/msal-browser'
@@ -112,12 +110,11 @@ methods:
       parameters:
         - id: key
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;void&gt;
-  - name: 'setItem(string, T)'
+  - name: setItem(string, T)
     uid: '@azure/msal-browser.AsyncMemoryStorage.setItem'
     package: '@azure/msal-browser'
     summary: >-
@@ -135,8 +132,7 @@ methods:
           description: ''
         - id: value
           type: T
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;void&gt;

@@ -24,7 +24,7 @@ methods:
   - name: containsKey(string)
     uid: '@azure/msal-browser.BrowserStorage.containsKey'
     package: '@azure/msal-browser'
-    summary: ''
+    summary: Returns true or false if the given key is present in the cache.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -39,33 +39,35 @@ methods:
   - name: getItem(string)
     uid: '@azure/msal-browser.BrowserStorage.getItem'
     package: '@azure/msal-browser'
-    summary: ''
+    summary: Get the item from the window storage object matching the given key.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getItem(key: string): string | null'
+      content: 'function getItem(key: string): null | string'
       parameters:
         - id: key
           type: string
           description: ''
       return:
         description: ''
-        type: string | null
+        type: null | string
   - name: getKeys()
     uid: '@azure/msal-browser.BrowserStorage.getKeys'
     package: '@azure/msal-browser'
-    summary: ''
+    summary: >-
+      Get all the keys from the window storage object as an iterable array of
+      strings.
     remarks: ''
     isDeprecated: false
     syntax:
       content: 'function getKeys(): string[]'
       return:
         description: ''
-        type: 'string[]'
+        type: string[]
   - name: removeItem(string)
     uid: '@azure/msal-browser.BrowserStorage.removeItem'
     package: '@azure/msal-browser'
-    summary: ''
+    summary: Removes the item in the window storage object matching the given key.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -74,10 +76,10 @@ methods:
         - id: key
           type: string
           description: ''
-  - name: 'setItem(string, string)'
+  - name: setItem(string, string)
     uid: '@azure/msal-browser.BrowserStorage.setItem'
     package: '@azure/msal-browser'
-    summary: ''
+    summary: Sets the item in the window storage object with the given key.
     remarks: ''
     isDeprecated: false
     syntax:

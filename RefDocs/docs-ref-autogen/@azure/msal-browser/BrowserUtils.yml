@@ -16,7 +16,7 @@ methods:
     isDeprecated: false
     syntax:
       content: static function blockAcquireTokenInPopups()
-  - name: 'blockNativeBrokerCalledBeforeInitialized(boolean, boolean)'
+  - name: blockNativeBrokerCalledBeforeInitialized(boolean, boolean)
     uid: '@azure/msal-browser.BrowserUtils.blockNativeBrokerCalledBeforeInitialized'
     package: '@azure/msal-browser'
     summary: >-
@@ -35,8 +35,7 @@ methods:
           description: ''
         - id: initialized
           type: boolean
-          description: |+
-
+          description: ''
   - name: blockNonBrowserEnvironment(boolean)
     uid: '@azure/msal-browser.BrowserUtils.blockNonBrowserEnvironment'
     package: '@azure/msal-browser'
@@ -50,9 +49,8 @@ methods:
       parameters:
         - id: isBrowserEnvironment
           type: boolean
-          description: |
-            Flag indicating if environment is a browser.
-  - name: 'blockRedirectInIframe(InteractionType, boolean)'
+          description: Flag indicating if environment is a browser.
+  - name: blockRedirectInIframe(InteractionType, boolean)
     uid: '@azure/msal-browser.BrowserUtils.blockRedirectInIframe'
     package: '@azure/msal-browser'
     summary: Block redirect operations in iframes unless explicitly allowed
@@ -68,13 +66,12 @@ methods:
           description: Interaction type for the request
         - id: allowRedirectInIframe
           type: boolean
-          description: |
-            Config value to allow redirects when app is inside an iframe
+          description: Config value to allow redirects when app is inside an iframe
   - name: blockReloadInHiddenIframes()
     uid: '@azure/msal-browser.BrowserUtils.blockReloadInHiddenIframes'
     package: '@azure/msal-browser'
     summary: |-
-      Throws error if we have completed an auth and are
+      Throws error if we have completed an auth and are 
       attempting another auth request inside an iframe.
     remarks: ''
     isDeprecated: false

@@ -2,10 +2,11 @@
 name: PopupRequest
 uid: '@azure/msal-browser.PopupRequest'
 package: '@azure/msal-browser'
-summary: >
+summary: >-
   PopupRequest: Request object passed by user to retrieve a Code from the
 
   server (first leg of authorization code grant flow) with a popup window.
+
 
   - scopes                     - Array of scopes the application is requesting
   access to.
@@ -80,4 +81,4 @@ syntax: |
       | "requestedClaimsHash"
       | "nativeBroker"
     >
-  > & { popupWindowAttributes?: PopupWindowAttributes, scopes: Array<string> }
+  > & { popupWindowAttributes?: PopupWindowAttributes, scopes: string[] }

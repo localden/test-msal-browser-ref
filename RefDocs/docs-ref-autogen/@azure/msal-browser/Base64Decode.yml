@@ -23,8 +23,7 @@ methods:
       parameters:
         - id: input
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: string

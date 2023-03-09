@@ -41,7 +41,7 @@ constructors:
           type: IPerformanceClient
           description: ''
 methods:
-  - name: 'handleCodeResponseFromHash(string, string, Authority, INetworkModule)'
+  - name: handleCodeResponseFromHash(string, string, Authority, INetworkModule)
     uid: '@azure/msal-browser.InteractionHandler.handleCodeResponseFromHash'
     package: '@azure/msal-browser'
     summary: Function to handle response parameters from hash.
@@ -55,8 +55,7 @@ methods:
       parameters:
         - id: locationHash
           type: string
-          description: |+
-
+          description: ''
         - id: state
           type: string
           description: ''

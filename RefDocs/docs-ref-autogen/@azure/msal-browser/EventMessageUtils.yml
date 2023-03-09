@@ -8,7 +8,7 @@ remarks: ''
 isDeprecated: false
 type: class
 methods:
-  - name: 'getInteractionStatusFromEvent(EventMessage, InteractionStatus)'
+  - name: getInteractionStatusFromEvent(EventMessage, InteractionStatus)
     uid: '@azure/msal-browser.EventMessageUtils.getInteractionStatusFromEvent'
     package: '@azure/msal-browser'
     summary: Gets interaction status from event message
@@ -17,15 +17,14 @@ methods:
     syntax:
       content: >-
         static function getInteractionStatusFromEvent(message: EventMessage,
-        currentStatus?: InteractionStatus): InteractionStatus | null
+        currentStatus?: InteractionStatus): null | InteractionStatus
       parameters:
         - id: message
           type: <xref uid="@azure/msal-browser.EventMessage" />
           description: ''
         - id: currentStatus
           type: <xref uid="@azure/msal-browser.InteractionStatus" />
-          description: |+
-
+          description: ''
       return:
         description: ''
-        type: <xref uid="@azure/msal-browser.InteractionStatus" /> | null
+        type: null | <xref uid="@azure/msal-browser.InteractionStatus" />

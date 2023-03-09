@@ -8,7 +8,7 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: 'EventHandler(Logger, ICrypto)'
+  - name: EventHandler(Logger, ICrypto)
     uid: '@azure/msal-browser.EventHandler.constructor'
     package: '@azure/msal-browser'
     summary: ''
@@ -32,16 +32,15 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function addEventCallback(callback: EventCallbackFunction): string |
-        null
+        function addEventCallback(callback: EventCallbackFunction): null |
+        string
       parameters:
         - id: callback
           type: <xref uid="@azure/msal-browser.EventCallbackFunction" />
-          description: |+
-
+          description: ''
       return:
         description: ''
-        type: string | null
+        type: null | string
   - name: disableAccountStorageEvents()
     uid: '@azure/msal-browser.EventHandler.disableAccountStorageEvents'
     package: '@azure/msal-browser'
@@ -52,7 +51,7 @@ methods:
     isDeprecated: false
     syntax:
       content: function disableAccountStorageEvents()
-  - name: 'emitEvent(EventType, InteractionType, EventPayload, EventError)'
+  - name: emitEvent(EventType, InteractionType, any, any)
     uid: '@azure/msal-browser.EventHandler.emitEvent'
     package: '@azure/msal-browser'
     summary: Emits events by calling callback with event message
@@ -61,7 +60,7 @@ methods:
     syntax:
       content: >-
         function emitEvent(eventType: EventType, interactionType?:
-        InteractionType, payload?: EventPayload, error?: EventError)
+        InteractionType, payload?: any, error?: any)
       parameters:
         - id: eventType
           type: <xref uid="@azure/msal-browser.EventType" />
@@ -70,12 +69,11 @@ methods:
           type: <xref uid="@azure/msal-browser.InteractionType" />
           description: ''
         - id: payload
-          type: <xref uid="@azure/msal-browser.EventPayload" />
+          type: any
           description: ''
         - id: error
-          type: <xref uid="@azure/msal-browser.EventError" />
-          description: |+
-
+          type: any
+          description: ''
   - name: enableAccountStorageEvents()
     uid: '@azure/msal-browser.EventHandler.enableAccountStorageEvents'
     package: '@azure/msal-browser'
@@ -97,5 +95,4 @@ methods:
       parameters:
         - id: callbackId
           type: string
-          description: |+
-
+          description: ''

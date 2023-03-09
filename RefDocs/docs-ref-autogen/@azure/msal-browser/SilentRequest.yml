@@ -2,13 +2,14 @@
 name: SilentRequest
 uid: '@azure/msal-browser.SilentRequest'
 package: '@azure/msal-browser'
-summary: >
+summary: >-
   SilentRequest: Request object passed by user to retrieve tokens from the
 
   cache, renew an expired token with a refresh token, or retrieve a code (first
   leg of authorization code grant flow)
 
   in a hidden iframe.
+
 
   - scopes                 - Array of scopes the application is requesting
   access to.
@@ -55,11 +56,11 @@ syntax: |
     | "requestedClaimsHash"
   > & {
     account?: AccountInfo,
-    authority?: undefined | string,
+    authority?: string,
     cacheLookupPolicy?: CacheLookupPolicy,
-    correlationId?: undefined | string,
+    correlationId?: string,
     extraQueryParameters?: StringDict,
-    forceRefresh?: undefined | false | true,
-    prompt?: undefined | string,
-    redirectUri?: undefined | string,
+    forceRefresh?: boolean,
+    prompt?: string,
+    redirectUri?: string,
   }

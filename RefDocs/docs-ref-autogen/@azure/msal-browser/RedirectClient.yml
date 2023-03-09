@@ -2,7 +2,9 @@
 name: RedirectClient
 uid: '@azure/msal-browser.RedirectClient'
 package: '@azure/msal-browser'
-summary: ''
+summary: >-
+  Defines the class structure and helper functions used by the "standard",
+  non-brokered auth flows (popup, redirect, silent (RT), silent (iframe))
 fullName: RedirectClient
 remarks: ''
 isDeprecated: false
@@ -11,7 +13,7 @@ constructors:
   - name: >-
       RedirectClient(BrowserConfiguration, BrowserCacheManager, ICrypto, Logger,
       EventHandler, INavigationClient, IPerformanceClient, BrowserCacheManager,
-      NativeMessageHandler, undefined | string)
+      NativeMessageHandler, string)
     uid: '@azure/msal-browser.RedirectClient.constructor'
     package: '@azure/msal-browser'
     summary: ''
@@ -24,7 +26,7 @@ constructors:
         eventHandler: EventHandler, navigationClient: INavigationClient,
         performanceClient: IPerformanceClient, nativeStorageImpl:
         BrowserCacheManager, nativeMessageHandler?: NativeMessageHandler,
-        correlationId?: undefined | string)
+        correlationId?: string)
       parameters:
         - id: config
           type: <xref uid="@azure/msal-browser.BrowserConfiguration" />
@@ -54,27 +56,27 @@ constructors:
           type: <xref uid="@azure/msal-browser.NativeMessageHandler" />
           description: ''
         - id: correlationId
-          type: undefined | string
+          type: string
           description: ''
 inheritedMethods:
-  - name: getRedirectUri(undefined | string)
+  - name: getRedirectUri(string)
     uid: '@azure/msal-browser.RedirectClient.getRedirectUri'
     package: '@azure/msal-browser'
     summary: Use to get the redirect uri configured in MSAL or null.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getRedirectUri(requestRedirectUri?: undefined | string): string'
+      content: 'function getRedirectUri(requestRedirectUri?: string): string'
       parameters:
         - id: requestRedirectUri
-          type: undefined | string
+          type: string
           description: ''
       return:
         description: Redirect URL
         type: string
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [BaseInteractionClient.getRedirectUri](xref:@azure/msal-browser.BaseInteractionClient.getRedirectUri)
+      [StandardInteractionClient.getRedirectUri](xref:@azure/msal-browser.StandardInteractionClient.getRedirectUri)
 methods:
   - name: acquireToken(RedirectRequest)
     uid: '@azure/msal-browser.RedirectClient.acquireToken'
@@ -87,12 +89,11 @@ methods:
       parameters:
         - id: request
           type: <xref uid="@azure/msal-browser.RedirectRequest" />
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;void&gt;
-  - name: handleRedirectPromise(undefined | string)
+  - name: handleRedirectPromise(string)
     uid: '@azure/msal-browser.RedirectClient.handleRedirectPromise'
     package: '@azure/msal-browser'
     summary: |-
@@ -102,17 +103,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function handleRedirectPromise(hash?: undefined | string):
-        Promise<AuthenticationResult | null>
+      content: 'function handleRedirectPromise(hash?: string): Promise<any>'
       parameters:
         - id: hash
-          type: undefined | string
-          description: |+
-
+          type: string
+          description: ''
       return:
         description: ''
-        type: Promise&lt;AuthenticationResult | null&gt;
+        type: Promise&lt;any&gt;
   - name: logout(EndSessionRequest)
     uid: '@azure/msal-browser.RedirectClient.logout'
     package: '@azure/msal-browser'
@@ -128,8 +126,7 @@ methods:
       parameters:
         - id: logoutRequest
           type: <xref uid="@azure/msal-browser.EndSessionRequest" />
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;void&gt;

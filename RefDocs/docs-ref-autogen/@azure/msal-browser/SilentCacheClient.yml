@@ -2,7 +2,9 @@
 name: SilentCacheClient
 uid: '@azure/msal-browser.SilentCacheClient'
 package: '@azure/msal-browser'
-summary: ''
+summary: >-
+  Defines the class structure and helper functions used by the "standard",
+  non-brokered auth flows (popup, redirect, silent (RT), silent (iframe))
 fullName: SilentCacheClient
 remarks: ''
 isDeprecated: false
@@ -11,7 +13,7 @@ constructors:
   - name: >-
       SilentCacheClient(BrowserConfiguration, BrowserCacheManager, ICrypto,
       Logger, EventHandler, INavigationClient, IPerformanceClient,
-      NativeMessageHandler, undefined | string)
+      NativeMessageHandler, string)
     uid: '@azure/msal-browser.SilentCacheClient.constructor'
     package: '@azure/msal-browser'
     summary: ''
@@ -23,7 +25,7 @@ constructors:
         BrowserCacheManager, browserCrypto: ICrypto, logger: Logger,
         eventHandler: EventHandler, navigationClient: INavigationClient,
         performanceClient: IPerformanceClient, nativeMessageHandler?:
-        NativeMessageHandler, correlationId?: undefined | string)
+        NativeMessageHandler, correlationId?: string)
       parameters:
         - id: config
           type: <xref uid="@azure/msal-browser.BrowserConfiguration" />
@@ -50,32 +52,32 @@ constructors:
           type: <xref uid="@azure/msal-browser.NativeMessageHandler" />
           description: ''
         - id: correlationId
-          type: undefined | string
+          type: string
           description: ''
 inheritedMethods:
-  - name: getRedirectUri(undefined | string)
+  - name: getRedirectUri(string)
     uid: '@azure/msal-browser.SilentCacheClient.getRedirectUri'
     package: '@azure/msal-browser'
     summary: Use to get the redirect uri configured in MSAL or null.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getRedirectUri(requestRedirectUri?: undefined | string): string'
+      content: 'function getRedirectUri(requestRedirectUri?: string): string'
       parameters:
         - id: requestRedirectUri
-          type: undefined | string
+          type: string
           description: ''
       return:
         description: Redirect URL
         type: string
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [BaseInteractionClient.getRedirectUri](xref:@azure/msal-browser.BaseInteractionClient.getRedirectUri)
+      [StandardInteractionClient.getRedirectUri](xref:@azure/msal-browser.StandardInteractionClient.getRedirectUri)
 methods:
   - name: acquireToken(CommonSilentFlowRequest)
     uid: '@azure/msal-browser.SilentCacheClient.acquireToken'
     package: '@azure/msal-browser'
-    summary: 'Returns unexpired tokens from the cache, if available'
+    summary: Returns unexpired tokens from the cache, if available
     remarks: ''
     isDeprecated: false
     syntax:
@@ -85,12 +87,11 @@ methods:
       parameters:
         - id: silentRequest
           type: CommonSilentFlowRequest
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;AuthenticationResult&gt;
-  - name: 'initializeSilentRequest(SilentRequest, AccountInfo)'
+  - name: initializeSilentRequest(SilentRequest, AccountInfo)
     uid: '@azure/msal-browser.SilentCacheClient.initializeSilentRequest'
     package: '@azure/msal-browser'
     summary: ''

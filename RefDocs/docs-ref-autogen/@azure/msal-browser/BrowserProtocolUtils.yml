@@ -8,7 +8,7 @@ remarks: ''
 isDeprecated: false
 type: class
 methods:
-  - name: 'extractBrowserRequestState(ICrypto, string)'
+  - name: extractBrowserRequestState(ICrypto, string)
     uid: '@azure/msal-browser.BrowserProtocolUtils.extractBrowserRequestState'
     package: '@azure/msal-browser'
     summary: Extracts the BrowserStateObject from the state string.
@@ -17,18 +17,17 @@ methods:
     syntax:
       content: >-
         static function extractBrowserRequestState(browserCrypto: ICrypto,
-        state: string): BrowserStateObject | null
+        state: string): null | BrowserStateObject
       parameters:
         - id: browserCrypto
           type: ICrypto
           description: ''
         - id: state
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
-        type: <xref uid="@azure/msal-browser.BrowserStateObject" /> | null
+        type: null | <xref uid="@azure/msal-browser.BrowserStateObject" />
   - name: parseServerResponseFromHash(string)
     uid: '@azure/msal-browser.BrowserProtocolUtils.parseServerResponseFromHash'
     package: '@azure/msal-browser'
@@ -42,8 +41,7 @@ methods:
       parameters:
         - id: locationHash
           type: string
-          description: |
-            Hash from url
+          description: Hash from url
       return:
         description: ''
         type: ServerAuthorizationCodeResponse

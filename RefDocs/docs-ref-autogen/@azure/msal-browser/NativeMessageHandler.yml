@@ -8,7 +8,7 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: 'NativeMessageHandler(Logger, number, undefined | string)'
+  - name: NativeMessageHandler(Logger, number, string)
     uid: '@azure/msal-browser.NativeMessageHandler.constructor'
     package: '@azure/msal-browser'
     summary: ''
@@ -17,7 +17,7 @@ constructors:
     syntax:
       content: >-
         new NativeMessageHandler(logger: Logger, handshakeTimeoutMs: number,
-        extensionId?: undefined | string)
+        extensionId?: string)
       parameters:
         - id: logger
           type: Logger
@@ -26,10 +26,10 @@ constructors:
           type: number
           description: ''
         - id: extensionId
-          type: undefined | string
+          type: string
           description: ''
 methods:
-  - name: 'createProvider(Logger, number)'
+  - name: createProvider(Logger, number)
     uid: '@azure/msal-browser.NativeMessageHandler.createProvider'
     package: '@azure/msal-browser'
     summary: >-
@@ -47,8 +47,7 @@ methods:
           description: ''
         - id: handshakeTimeoutMs
           type: number
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;<xref uid="@azure/msal-browser.NativeMessageHandler" />&gt;
@@ -61,10 +60,10 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getExtensionId(): string | undefined'
+      content: 'function getExtensionId(): undefined | string'
       return:
         description: ''
-        type: string | undefined
+        type: undefined | string
   - name: getExtensionVersion()
     uid: '@azure/msal-browser.NativeMessageHandler.getExtensionVersion'
     package: '@azure/msal-browser'
@@ -74,13 +73,11 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getExtensionVersion(): string | undefined'
+      content: 'function getExtensionVersion(): undefined | string'
       return:
         description: ''
-        type: string | undefined
-  - name: >-
-      isNativeAvailable(BrowserConfiguration, Logger, NativeMessageHandler,
-      AuthenticationScheme)
+        type: undefined | string
+  - name: isNativeAvailable(BrowserConfiguration, Logger, NativeMessageHandler, any)
     uid: '@azure/msal-browser.NativeMessageHandler.isNativeAvailable'
     package: '@azure/msal-browser'
     summary: >-
@@ -92,7 +89,7 @@ methods:
       content: >-
         static function isNativeAvailable(config: BrowserConfiguration, logger:
         Logger, nativeExtensionProvider?: NativeMessageHandler,
-        authenticationScheme?: AuthenticationScheme): boolean
+        authenticationScheme?: any): boolean
       parameters:
         - id: config
           type: <xref uid="@azure/msal-browser.BrowserConfiguration" />
@@ -104,9 +101,8 @@ methods:
           type: <xref uid="@azure/msal-browser.NativeMessageHandler" />
           description: ''
         - id: authenticationScheme
-          type: AuthenticationScheme
-          description: |+
-
+          type: any
+          description: ''
       return:
         description: ''
         type: boolean
@@ -123,8 +119,7 @@ methods:
       parameters:
         - id: body
           type: <xref uid="@azure/msal-browser.NativeExtensionRequestBody" />
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;object&gt;

@@ -9,6 +9,6 @@ isDeprecated: false
 syntax: |
   type CacheOptions = {
     cacheLocation?: BrowserCacheLocation | string,
-    secureCookies?: undefined | false | true,
-    storeAuthStateInCookie?: undefined | false | true,
+    secureCookies?: boolean,
+    storeAuthStateInCookie?: boolean,
   }

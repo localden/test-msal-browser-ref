@@ -2,7 +2,9 @@
 name: SilentHandler
 uid: '@azure/msal-browser.SilentHandler'
 package: '@azure/msal-browser'
-summary: ''
+summary: >-
+  Abstract class which defines operations for a browser interaction handling
+  class.
 fullName: SilentHandler
 remarks: ''
 isDeprecated: false
@@ -10,9 +12,8 @@ type: class
 constructors:
   - name: >-
       SilentHandler(AuthorizationCodeClient, BrowserCacheManager,
-      CommonAuthorizationCodeRequest, Logger,
-      Required<Pick<BrowserSystemOptions, "navigateFrameWait" |
-      "pollIntervalMilliseconds">>, IPerformanceClient)
+      CommonAuthorizationCodeRequest, Logger, Required<Pick<any,
+      "navigateFrameWait" | "pollIntervalMilliseconds">>, IPerformanceClient)
     uid: '@azure/msal-browser.SilentHandler.constructor'
     package: '@azure/msal-browser'
     summary: ''
@@ -22,9 +23,8 @@ constructors:
       content: >-
         new SilentHandler(authCodeModule: AuthorizationCodeClient, storageImpl:
         BrowserCacheManager, authCodeRequest: CommonAuthorizationCodeRequest,
-        logger: Logger, systemOptions: Required<Pick<BrowserSystemOptions,
-        "navigateFrameWait" | "pollIntervalMilliseconds">>, performanceClient:
-        IPerformanceClient)
+        logger: Logger, systemOptions: Required<Pick<any, "navigateFrameWait" |
+        "pollIntervalMilliseconds">>, performanceClient: IPerformanceClient)
       parameters:
         - id: authCodeModule
           type: AuthorizationCodeClient
@@ -40,15 +40,14 @@ constructors:
           description: ''
         - id: systemOptions
           type: >-
-            Required&lt;Pick&lt;<xref
-            uid="@azure/msal-browser.BrowserSystemOptions" />,
-            "navigateFrameWait" | "pollIntervalMilliseconds"&gt;&gt;
+            Required&lt;Pick&lt;any, "navigateFrameWait" |
+            "pollIntervalMilliseconds"&gt;&gt;
           description: ''
         - id: performanceClient
           type: IPerformanceClient
           description: ''
 inheritedMethods:
-  - name: 'handleCodeResponseFromHash(string, string, Authority, INetworkModule)'
+  - name: handleCodeResponseFromHash(string, string, Authority, INetworkModule)
     uid: '@azure/msal-browser.SilentHandler.handleCodeResponseFromHash'
     package: '@azure/msal-browser'
     summary: Function to handle response parameters from hash.
@@ -62,8 +61,7 @@ inheritedMethods:
       parameters:
         - id: locationHash
           type: string
-          description: |+
-
+          description: ''
         - id: state
           type: string
           description: ''
@@ -133,7 +131,7 @@ methods:
       return:
         description: ''
         type: Promise&lt;HTMLIFrameElement&gt;
-  - name: 'monitorIframeForHash(HTMLIFrameElement, number)'
+  - name: monitorIframeForHash(HTMLIFrameElement, number)
     uid: '@azure/msal-browser.SilentHandler.monitorIframeForHash'
     package: '@azure/msal-browser'
     summary: >-
@@ -151,8 +149,7 @@ methods:
           description: ''
         - id: timeout
           type: number
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;string&gt;

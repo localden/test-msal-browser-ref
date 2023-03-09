@@ -2,7 +2,9 @@
 name: RedirectHandler
 uid: '@azure/msal-browser.RedirectHandler'
 package: '@azure/msal-browser'
-summary: ''
+summary: >-
+  Abstract class which defines operations for a browser interaction handling
+  class.
 fullName: RedirectHandler
 remarks: ''
 isDeprecated: false
@@ -79,7 +81,7 @@ inheritedMethods:
       <b>Inherited From</b>
       [InteractionHandler.handleCodeResponseFromServer](xref:@azure/msal-browser.InteractionHandler.handleCodeResponseFromServer)
 methods:
-  - name: 'handleCodeResponseFromHash(string, string, Authority, INetworkModule)'
+  - name: handleCodeResponseFromHash(string, string, Authority, INetworkModule)
     uid: '@azure/msal-browser.RedirectHandler.handleCodeResponseFromHash'
     package: '@azure/msal-browser'
     summary: Handle authorization code response in the window.
@@ -106,7 +108,10 @@ methods:
       return:
         description: ''
         type: Promise&lt;AuthenticationResult&gt;
-  - name: 'initiateAuthRequest(string, RedirectParams)'
+  - name: >-
+      initiateAuthRequest(string, { navigationClient: INavigationClient,
+      onRedirectNavigate?: (url: string) => boolean | void, redirectStartPage:
+      string, redirectTimeout: number })
     uid: '@azure/msal-browser.RedirectHandler.initiateAuthRequest'
     package: '@azure/msal-browser'
     summary: Redirects window to given URL.
@@ -114,14 +119,19 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function initiateAuthRequest(requestUrl: string, params:
-        RedirectParams): Promise<void>
+        function initiateAuthRequest(requestUrl: string, params: {
+        navigationClient: INavigationClient, onRedirectNavigate?: (url: string)
+        => boolean | void, redirectStartPage: string, redirectTimeout: number
+        }): Promise<void>
       parameters:
         - id: requestUrl
           type: string
           description: ''
         - id: params
-          type: <xref uid="@azure/msal-browser.RedirectParams" />
+          type: >-
+            { navigationClient: INavigationClient, onRedirectNavigate?: (url:
+            string) =&gt; boolean | void, redirectStartPage: string,
+            redirectTimeout: number }
           description: ''
       return:
         description: ''

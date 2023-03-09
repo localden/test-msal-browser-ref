@@ -10,6 +10,6 @@ syntax: |
   type CachedKeyPair = {
     privateKey: CryptoKey,
     publicKey: CryptoKey,
-    requestMethod?: undefined | string,
-    requestUri?: undefined | string,
+    requestMethod?: string,
+    requestUri?: string,
   }

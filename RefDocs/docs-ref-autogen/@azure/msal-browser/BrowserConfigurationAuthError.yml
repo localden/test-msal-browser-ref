@@ -8,7 +8,7 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: 'BrowserConfigurationAuthError(string, undefined | string)'
+  - name: BrowserConfigurationAuthError(string, string)
     uid: '@azure/msal-browser.BrowserConfigurationAuthError.constructor'
     package: '@azure/msal-browser'
     summary: ''
@@ -17,13 +17,13 @@ constructors:
     syntax:
       content: >-
         new BrowserConfigurationAuthError(errorCode: string, errorMessage?:
-        undefined | string)
+        string)
       parameters:
         - id: errorCode
           type: string
           description: ''
         - id: errorMessage
-          type: undefined | string
+          type: string
           description: ''
 methods:
   - name: createEntropyNotProvided()
@@ -115,8 +115,7 @@ methods:
       parameters:
         - id: givenStorageLocation
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: <xref uid="@azure/msal-browser.BrowserConfigurationAuthError" />
@@ -136,4 +135,4 @@ methods:
       return:
         description: ''
         type: <xref uid="@azure/msal-browser.BrowserConfigurationAuthError" />
-extends: any
+extends: <xref uid="@azure/msal-browser.AuthenticationScheme" />

@@ -8,7 +8,7 @@ remarks: ''
 isDeprecated: false
 type: interface
 methods:
-  - name: 'navigateExternal(string, NavigationOptions)'
+  - name: navigateExternal(string, NavigationOptions)
     uid: '@azure/msal-browser.INavigationClient.navigateExternal'
     package: '@azure/msal-browser'
     summary: >-
@@ -26,12 +26,11 @@ methods:
           description: ''
         - id: options
           type: <xref uid="@azure/msal-browser.NavigationOptions" />
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;boolean&gt;
-  - name: 'navigateInternal(string, NavigationOptions)'
+  - name: navigateInternal(string, NavigationOptions)
     uid: '@azure/msal-browser.INavigationClient.navigateInternal'
     package: '@azure/msal-browser'
     summary: >-
@@ -51,8 +50,7 @@ methods:
           description: ''
         - id: options
           type: <xref uid="@azure/msal-browser.NavigationOptions" />
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;boolean&gt;

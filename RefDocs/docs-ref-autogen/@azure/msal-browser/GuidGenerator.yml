@@ -43,8 +43,7 @@ methods:
       parameters:
         - id: guid
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: boolean

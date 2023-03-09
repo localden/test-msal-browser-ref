@@ -20,4 +20,4 @@ constructors:
         - id: config
           type: ClientConfiguration
           description: ''
-extends: any
+extends: <xref uid="@azure/msal-browser.AuthenticationScheme" />

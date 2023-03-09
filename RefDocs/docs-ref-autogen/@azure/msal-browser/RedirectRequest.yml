@@ -2,10 +2,11 @@
 name: RedirectRequest
 uid: '@azure/msal-browser.RedirectRequest'
 package: '@azure/msal-browser'
-summary: >
+summary: >-
   RedirectRequest: Request object passed by user to retrieve a Code from the
 
   server (first leg of authorization code grant flow) with a full page redirect.
+
 
   - scopes                     - Array of scopes the application is requesting
   access to.
@@ -87,7 +88,7 @@ syntax: |
       | "nativeBroker"
     >
   > & {
-    onRedirectNavigate?: undefined | ((url: string) => boolean | void),
-    redirectStartPage?: undefined | string,
-    scopes: Array<string>,
+    onRedirectNavigate?: (url: string) => boolean | void,
+    redirectStartPage?: string,
+    scopes: string[],
   }

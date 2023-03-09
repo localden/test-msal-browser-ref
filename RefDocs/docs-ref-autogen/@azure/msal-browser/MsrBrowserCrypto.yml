@@ -8,7 +8,7 @@ remarks: ''
 isDeprecated: false
 type: class
 methods:
-  - name: 'digest(AlgorithmIdentifier, Uint8Array)'
+  - name: digest(AlgorithmIdentifier, Uint8Array)
     uid: '@azure/msal-browser.MsrBrowserCrypto.digest'
     package: '@azure/msal-browser'
     summary: ''
@@ -43,7 +43,7 @@ methods:
       return:
         description: ''
         type: Promise&lt;JsonWebKey&gt;
-  - name: 'generateKey(RsaHashedKeyGenParams, boolean, KeyUsage[])'
+  - name: generateKey(RsaHashedKeyGenParams, boolean, KeyUsage[])
     uid: '@azure/msal-browser.MsrBrowserCrypto.generateKey'
     package: '@azure/msal-browser'
     summary: ''
@@ -61,7 +61,7 @@ methods:
           type: boolean
           description: ''
         - id: keyUsages
-          type: 'KeyUsage[]'
+          type: KeyUsage[]
           description: ''
       return:
         description: ''
@@ -81,7 +81,7 @@ methods:
       return:
         description: ''
         type: Uint8Array
-  - name: 'importKey(JsonWebKey, RsaHashedImportParams, boolean, KeyUsage[])'
+  - name: importKey(JsonWebKey, RsaHashedImportParams, boolean, KeyUsage[])
     uid: '@azure/msal-browser.MsrBrowserCrypto.importKey'
     package: '@azure/msal-browser'
     summary: ''
@@ -103,7 +103,7 @@ methods:
           type: boolean
           description: ''
         - id: keyUsages
-          type: 'KeyUsage[]'
+          type: KeyUsage[]
           description: ''
       return:
         description: ''
@@ -120,7 +120,7 @@ methods:
         - id: entropy
           type: Uint8Array
           description: ''
-  - name: 'sign(AlgorithmIdentifier, CryptoKey, ArrayBuffer)'
+  - name: sign(AlgorithmIdentifier, CryptoKey, ArrayBuffer)
     uid: '@azure/msal-browser.MsrBrowserCrypto.sign'
     package: '@azure/msal-browser'
     summary: ''

@@ -11,6 +11,6 @@ syntax: |
     error: number,
     properties: object,
     protocol_error: string,
-    retryable?: undefined | false | true,
+    retryable?: boolean,
     status: string,
   }

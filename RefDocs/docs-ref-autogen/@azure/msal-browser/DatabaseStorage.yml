@@ -9,15 +9,6 @@ fullName: DatabaseStorage<T>
 remarks: ''
 isDeprecated: false
 type: class
-constructors:
-  - name: DatabaseStorage()
-    uid: '@azure/msal-browser.DatabaseStorage.constructor'
-    package: '@azure/msal-browser'
-    summary: ''
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: new DatabaseStorage()
 methods:
   - name: closeConnection()
     uid: '@azure/msal-browser.DatabaseStorage.closeConnection'
@@ -69,15 +60,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getItem(key: string): Promise<T | null>'
+      content: 'function getItem(key: string): Promise<null | T>'
       parameters:
         - id: key
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
-        type: Promise&lt;T | null&gt;
+        type: Promise&lt;null | T&gt;
   - name: getKeys()
     uid: '@azure/msal-browser.DatabaseStorage.getKeys'
     package: '@azure/msal-browser'
@@ -88,7 +78,7 @@ methods:
       content: 'function getKeys(): Promise<string[]>'
       return:
         description: ''
-        type: 'Promise&lt;string[]&gt;'
+        type: Promise&lt;string[]&gt;
   - name: open()
     uid: '@azure/msal-browser.DatabaseStorage.open'
     package: '@azure/msal-browser'
@@ -111,12 +101,11 @@ methods:
       parameters:
         - id: key
           type: string
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;void&gt;
-  - name: 'setItem(string, T)'
+  - name: setItem(string, T)
     uid: '@azure/msal-browser.DatabaseStorage.setItem'
     package: '@azure/msal-browser'
     summary: Adds item to IndexedDB under given key
@@ -130,8 +119,7 @@ methods:
           description: ''
         - id: payload
           type: T
-          description: |+
-
+          description: ''
       return:
         description: ''
         type: Promise&lt;void&gt;

@@ -8,7 +8,7 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: 'NativeAuthError(string, string, OSError)'
+  - name: NativeAuthError(string, string, OSError)
     uid: '@azure/msal-browser.NativeAuthError.constructor'
     package: '@azure/msal-browser'
     summary: ''
@@ -37,12 +37,12 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'ext: OSError | undefined'
+      content: 'ext: undefined | OSError'
       return:
         description: ''
-        type: <xref uid="@azure/msal-browser.OSError" /> | undefined
+        type: undefined | <xref uid="@azure/msal-browser.OSError" />
 methods:
-  - name: 'createError(string, string, OSError)'
+  - name: createError(string, string, OSError)
     uid: '@azure/msal-browser.NativeAuthError.createError'
     package: '@azure/msal-browser'
     summary: Create the appropriate error object based on the WAM status code.
@@ -102,4 +102,4 @@ methods:
       return:
         description: ''
         type: boolean
-extends: any
+extends: <xref uid="@azure/msal-browser.AuthenticationScheme" />
